@@ -3,7 +3,7 @@ Stan: E3 · Aktualizacja: 2026-10-26
 
 Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; cięcie na pierwszą wersję należy do roli 03 (H-02, H-04). Liczby w kryteriach pochodzą z wektorów RD albo z decyzji; parametry merytoryczne są otwarte (OP-01…OP-13). Każdy przepływ dostanie scenariusz Maestro albo wyjątek z powodem (DP-33).
 
-**Podstawa merytoryczna (26.10.2026, po badaniach R-01…R-13):** wymagania opierają się tylko na częściach reguł o statusie „ustalone” (`reguly.md`, „Status merytoryczny reguł”). Liczby o statusie konwencja albo uproszczenie są parametrami w jednym pliku progów z tym oznaczeniem i nie są w interfejsie przedstawiane jako zalecenie; części otwarte nie wchodzą do aplikacji. **Treść drabin (kroki, cele) czeka na DK-08…DK-11** — wymagania zależne od nich mają „zależy od” i nie przechodzą do E4.
+**Podstawa merytoryczna (26.10.2026, po badaniach R-01…R-13):** wymagania opierają się tylko na częściach reguł o statusie „ustalone” (`reguly.md`, „Status merytoryczny reguł”). Liczby o statusie konwencja albo uproszczenie są parametrami w jednym pliku progów z tym oznaczeniem i nie są w interfejsie przedstawiane jako zalecenie; części otwarte nie wchodzą do aplikacji. **Cele v1 to pełne cele czterech drabin (DK-08)**; kroki bez potwierdzonej kolejności (OP-01, OP-11) blokują wydanie v1 — nie ma obejścia (`README.md`, „Blokery wydania”).
 
 ## Przepływy
 
@@ -73,7 +73,7 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
 ### BR-STA-003: Ocena poziomu: ankieta na start, test w pierwszym treningu
 - Przepływ: PR-01, PR-02 · Reguła: RD-04
 - Dowód potrzeby: J-01; S-34, S-15, S-20, S-29; DK-04
-- zależy od: ZAL-012, DK-08 (kroki drabin)
+- zależy od: ZAL-012, OP-01 (kroki drabin), OP-06
 - Status merytoryczny: ustalone „zacząć łatwiej i zwiększać stopniowo” (S-34); progi przypisania i start krok niżej — konwencja (OP-06)
 - Kryteria akceptacji:
   - Scenariusz: Ankieta wskazuje krok deklarowany
@@ -93,20 +93,31 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy użytkownik zapisuje test
     - Wtedy aplikacja prosi o poprawny wynik i nie ustala kroku (RD-04-W6)
 
-### BR-STA-004: Wiek użytkownika a trening bez nadzoru
-- Przepływ: PR-01
-- Dowód potrzeby: S-36 (młodzież bez wykwalifikowanego nadzoru nie powinna wykonywać treningu oporowego); DP-25
-- zależy od: DK-09
+### BR-STA-004: Rok urodzenia i tryb poniżej 18 lat
+- Przepływ: PR-01, PR-06 · Reguła: RD-09
+- Dowód potrzeby: S-36 (młodzież bez wykwalifikowanego nadzoru nie powinna wykonywać treningu oporowego); DK-09; DP-25
 - Kryteria akceptacji:
-  - Scenariusz: Zachowanie według decyzji
-    - Zakładając, że właściciel rozstrzygnął DK-09 (OP-27)
-    - Gdy osoba niepełnoletnia przechodzi start
-    - Wtedy aplikacja zachowuje się według DK-09 i nie proponuje testów maksymalnych bez nadzoru (S-36)
+  - Scenariusz: Jedno pytanie w ankiecie
+    - Zakładając, że użytkownik przechodzi ankietę startową
+    - Gdy dochodzi do pytania o wiek
+    - Wtedy widzi jedno pytanie o rok urodzenia, bez pytania o datę ani dokument
+  - Scenariusz: Poniżej 18 lat
+    - Zakładając, że jest rok 2026, a użytkownik podaje rok urodzenia 2009
+    - Gdy zapisuje ankietę
+    - Wtedy plan ma test kontrolny bez serii do upadku i tekst o treningu pod okiem trenera (RD-09-W3)
+  - Scenariusz: Granica 18 lat
+    - Zakładając, że jest rok 2026, a użytkownik podaje rok 2008
+    - Gdy zapisuje ankietę
+    - Wtedy obowiązuje tryb dorosłych (RD-09-W2)
+  - Scenariusz: Rok z przyszłości
+    - Zakładając, że użytkownik wpisuje rok późniejszy niż bieżący
+    - Gdy próbuje przejść dalej
+    - Wtedy aplikacja prosi o poprawny rok (RD-09-W5)
 
 ### BR-PLN-001: Drabina umiejętności z widoczną drogą
 - Przepływ: PR-08
 - Dowód potrzeby: J-03; S-23; motyw „progresja” 84 z 642 recenzji (`odkrywanie.md`); OG-01
-- zależy od: ZAL-011 (podważone), DK-08, DK-11
+- zależy od: ZAL-011 (podważone), DK-08, DK-11; **bloker v1**: każdy krok do celu (muscle-up, pistolet, pompka jednorącz, L-sit) wymaga potwierdzonej kolejności (OP-01, OP-11)
 - Kryteria akceptacji:
   - Scenariusz: Widok drabiny
     - Zakładając, że użytkownik ma aktywną drabinę na kroku 3
@@ -147,19 +158,22 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy wybiera „Anuluj” po lewej w nagłówku
     - Wtedy plan zostaje bez zmian
 
-### BR-PLN-004: Kroki dopasowane do sprzętu
+### BR-PLN-004: Kroki dopasowane do sprzętu; podciąganie tylko z drążkiem albo kółkami
 - Przepływ: PR-01, PR-09
-- Dowód potrzeby: J-07; S-24; DP-35; OP-15
-- zależy od: DK-10
+- Dowód potrzeby: J-07; S-24; DP-35; DK-10
 - Kryteria akceptacji:
-  - Scenariusz: Bez drążka
-    - Zakładając, że użytkownik zaznaczył brak drążka
-    - Gdy powstaje plan
-    - Wtedy plan nie zawiera kroków wymagających drążka, a drabiny bez zamiennika są oznaczone „wymaga drążka” (zamiennik: OP-15)
-  - Scenariusz: Dodanie sprzętu
+  - Scenariusz: Bez drążka i kółek
+    - Zakładając, że użytkownik zaznaczył, że nie ma drążka ani kółek
+    - Gdy wybiera cele
+    - Wtedy drabina podciągania jest niedostępna z jednym zdaniem, że wymaga drążka albo kółek, i bez zamienników ze stołu lub drzwi (DK-10)
+  - Scenariusz: Dodanie drążka
+    - Zakładając, że użytkownik dodaje drążek w sprzęcie
+    - Gdy zatwierdza nowy podgląd planu
+    - Wtedy drabina podciągania staje się dostępna
+  - Scenariusz: Guma oporowa
     - Zakładając, że użytkownik dodaje gumę oporową
     - Gdy zatwierdza nowy podgląd planu
-    - Wtedy kroki z gumą mogą pojawić się w drabinie (OP-10)
+    - Wtedy kroki z gumą pojawiają się tylko, jeśli mają potwierdzoną kolejność (OP-10)
 
 ### BR-PLN-005: Przypomnienie w dzień treningowy
 - Przepływ: PR-13
@@ -395,7 +409,15 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
   - Scenariusz: Następny trening
     - Zakładając, że użytkownik zgłosił ból przy ćwiczeniu w poprzednim treningu
     - Gdy zaczyna następny trening z tym ćwiczeniem
-    - Wtedy przed tym ćwiczeniem widzi pytanie „Nadal boli?” (DK-06); co po odpowiedzi „Tak” — OP-30
+    - Wtedy przed tym ćwiczeniem widzi pytanie „Nadal boli?” (DK-06)
+  - Scenariusz: „Tak” na „Nadal boli?”
+    - Zakładając, że użytkownik widzi pytanie „Nadal boli?”
+    - Gdy odpowiada „Tak”
+    - Wtedy ćwiczenie jest znowu pominięte, pokazuje się tekst o specjaliście, a pytanie wraca przy następnym treningu (RD-07-W5, DK-12)
+  - Scenariusz: „Nie” na „Nadal boli?”
+    - Zakładając, że użytkownik widzi pytanie „Nadal boli?”
+    - Gdy odpowiada „Nie”
+    - Wtedy ćwiczenie wraca do treningu, a pytanie przestaje się pojawiać (RD-07-W6)
 
 ### BR-BEZ-002: Zastrzeżenie medyczne widoczne w aplikacji
 - Przepływ: PR-01, PR-06, PR-13
@@ -422,7 +444,7 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
 ### BR-PST-002: Umiejętność osiągnięta: podtrzymanie i nowy cel
 - Przepływ: PR-03, PR-08
 - Dowód potrzeby: J-03; DK-07
-- zależy od: DK-08 (cele drabin)
+- zależy od: DK-08 (cele drabin), OP-01
 - Kryteria akceptacji:
   - Scenariusz: Ostatni krok zaliczony
     - Zakładając, że użytkownik zalicza kryterium ostatniego kroku drabiny

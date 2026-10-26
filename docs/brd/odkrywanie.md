@@ -177,6 +177,8 @@ Luki (praca, której nikt nie robi dobrze według recenzji): praca bez sieci i b
 
 ### OG-10: Własny tekst ankiety bezpieczeństwa
 - Konsensusowy kwestionariusz przesiewowy ma licencję bez utworów zależnych i do użytku niekomercyjnego [FAKT S-37]; płatna aplikacja nie wbudowuje go, nie tłumaczy i nie przerabia — ankieta ma własny tekst. Dotyczy BR-STA-002, RD-03.
+### OG-11: Ocena wieku nie zastępuje ochrony młodzieży
+- Ocena 9+ dotyczy treści [FAKT S-09]; dla młodzieży bez nadzoru źródło zaleca brak treningu oporowego [FAKT S-36], więc aplikacja pyta o rok urodzenia i zmienia test (DK-09). Dotyczy BR-STA-004, RD-09.
 
 ## Hipotezy dla ról 02 i 03
 
@@ -186,7 +188,7 @@ Luki (praca, której nikt nie robi dobrze według recenzji): praca bez sieci i b
 ### H-02: Liczba drabin w pierwszej wersji
 - Rodzaj: zakres · Rejestr: ZAL-011 · Dowody za szerokim wyborem: umiejętności z recenzji (S-23), cztery cele w propozycji analityka (podciąganie → muscle-up, pompka → na jednej ręce, przysiad → pistolet, deska → L-sit) · Przeciw: każda drabina wymaga źródeł R-01 i figur [OCENA].
 - Opcje: (a) 4 drabiny (pełny program ciała, więcej badań); (b) 2 drabiny (ciągnięcie i pchanie, szybciej); (c) 1 drabina pilotażowa (podciąganie → muscle-up). Rozstrzyga: rola 03 z właścicielem.
-- **Podważone 26.10.2026 (badania R-01):** żadna drabina nie jest potwierdzona do samego celu; ustalone albo uproszczone są tylko dolne odcinki (pompka do „stopy wyżej”, przysiad do bułgarskiego; podciąganie do 3 × 5 — jedno źródło szczebla 4), L-sit otwarty w całości. ZAL-011 ma status „podważone”; pytanie o cele pierwszej wersji i zakup książek poszło do właściciela (DK-08, DK-11; OP-26, OP-29).
+- **Podważone 26.10.2026 (badania R-01):** żadna drabina nie jest potwierdzona do samego celu; ustalone albo uproszczone są tylko dolne odcinki (pompka do „stopy wyżej”, przysiad do bułgarskiego; podciąganie do 3 × 5 — jedno źródło szczebla 4), L-sit otwarty w całości. ZAL-011 ma status „podważone”. **Rozstrzygnięte 26.10.2026 (DK-08, wbrew rekomendacji badacza):** pełne cele czterech drabin; kroki bez potwierdzonej kolejności blokują wydanie v1. Źródła: najpierw darmowe szczebla 2–3, zakup książek tylko po decyzji właściciela (DK-11).
 ### H-03: Ocena poziomu na starcie
 - Rodzaj: zakres i wartość · Rejestr: ZAL-012 · Dowody: test i ankieta deklarowane przez 7 z 13 konkurentów (tabela wyżej); „beginning questionnaire was great” (S-20) · Przeciw: test maksymalny bez przygotowania (OG-03).
 - Rozstrzygnięte: DK-04 (ankieta na start, test w pierwszym treningu), 26.10.2026.

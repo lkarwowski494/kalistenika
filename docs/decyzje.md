@@ -82,11 +82,14 @@ Werdykt kroku 0: **budować, warunkowo** (warunek: odświeżenie bramki przed ko
 | DK-06 | „Tylko pominięcie dziś” — plan działa dalej, przy kolejnym treningu pytanie „Nadal boli?”, tekst bez diagnozy (R-12); bez automatycznego wstrzymania drabiny | **wbrew rekomendacji** (rekomendacja: A, drabina wstrzymana do ręcznego wznowienia); odrzucone A i C (łatwiejszy krok) | BRD RD-07, BR-BEZ-001; tekst z badań R-12 |
 | DK-07 | „podtrzymanie (rzadsze treningi) i propozycja nowego celu” | zgodnie z rekomendacją A; odrzucone B zamknięcie drabiny, C trudniejsze warianty | BRD BR-PST-002; częstotliwość podtrzymania bez źródła (OP-04) |
 
-## Decyzje bez analogii — pytania u właściciela (z badań R-01…R-13, 26.10.2026; odpowiedź przez koordynatora)
-- **DK-08** cele pierwszej wersji: żadna drabina nie jest potwierdzona do samego celu, L-sit otwarty w całości (BRD OP-26, H-02).
-- **DK-09** wiek: aplikacja bez nadzoru a młodzież (BRD OP-27).
-- **DK-10** ciągnięcie bez drążka (BRD OP-28).
-- **DK-11** zakup legalnych kopii książek jako źródeł szczebla 3 (wyjątek od „0 zł”) (BRD OP-29).
+## Decyzje właściciela po badaniach R-01…R-13 (26.10.2026, przekazane przez koordynatora)
+| ID | Decyzja (słowa z przekazania) | Rekomendacja / odrzucone | Zależy od |
+|---|---|---|---|
+| DK-08 | cele v1: „pełne cele (muscle-up, pistol, pompka jednorącz, L-sit)”; „czekamy na źródła”, a cele bez potwierdzonej kolejności blokują wydanie v1 (bez obejścia) | **wbrew rekomendacji badacza** (A: v1 tylko z potwierdzonymi krokami i cele pośrednie, B równolegle); odrzucone A i C (kroki z praktyki trenerów) | BRD BR-PLN-001 (bloker), OP-01, OP-11; DK-11 |
+| DK-11 | książki: „najpierw szukamy darmowych źródeł szczebla 2–3”; zakup dopiero, gdy to nic nie da, i wtedy decyduje właściciel | — | badacz (w toku od 26.10.2026); warunkowe: ponowna decyzja o zakupie |
+| DK-09 | wiek: „jak w Treningu, czyli ocena 9+”; na starcie jedno pytanie o rok urodzenia w ankiecie; poniżej 18 lat test kontrolny bez serii do upadku i tekst o treningu pod okiem trenera | odrzucone: tryb młodzieżowy z osobnymi źródłami, sama informacja bez pytania | BRD RD-09, BR-STA-004; S-36 |
+| DK-10 | „drabina podciągania wymaga drążka albo kółek”; bez nich drabina niedostępna, aplikacja wyjaśnia dlaczego | zgodnie z rekomendacją badacza; odrzucone zamienniki ze stołu lub drzwi (brak źródeł o bezpieczeństwie) | BRD BR-PLN-004 |
+| DK-12 | po „Tak” na „Nadal boli?”: ćwiczenie znowu pominięte i tekst o specjaliście; pytanie przy każdym kolejnym treningu, aż padnie „Nie” (OP-30, opcja A) | zgodnie z rekomendacją; odrzucone B (inny cel po 3 × „Tak”, konwencja), C (wykonać ćwiczenie) | BRD RD-07, BR-BEZ-001 |
 
 ## Historia: decyzje bez analogii z kroku 0 (rozstrzygnięte 26.10.2026, wyżej)
 - **DK-01 wspólna czy osobna subskrypcja z Treningiem** — opcje w `docs/monetyzacja.md` i raporcie roli 02 z 26.10.2026; rekomendacja A (osobne produkty, ta sama konstrukcja i ceny).

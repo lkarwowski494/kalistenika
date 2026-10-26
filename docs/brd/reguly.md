@@ -1,7 +1,7 @@
 # BRD Kalistenika — reguły dziedzinowe (RD) z wektorami testowymi
 Stan: E3 · Aktualizacja: 2026-10-26
 
-Reguły są **parametryczne** (DM-03): BRD ustala logikę, jednostki i granice, a liczby merytoryczne (progi przejścia, niepowodzenia, odstępy) ustali badacz w R-01…R-13 (OP-01…OP-13). W wektorach parametry mają **wartości testowe** podane jako wejście; wektor sprawdza logikę, nie zaleca liczby. Wartości testowe zgodne ze źródłem są oznaczone S-nn, pozostałe są tylko danymi testu. Reguły krytyczne (RD-01, RD-03, RD-04, RD-06, RD-07) przechodzą przegląd roli 06 i człowieka (C-003). Wektory eksportuje `node scripts/kontrola-brd.mjs docs/brd --wektory > tests/wektory/brd.json`.
+Reguły są **parametryczne** (DM-03): BRD ustala logikę, jednostki i granice, a liczby merytoryczne (progi przejścia, niepowodzenia, odstępy) ustali badacz w R-01…R-13 (OP-01…OP-13). W wektorach parametry mają **wartości testowe** podane jako wejście; wektor sprawdza logikę, nie zaleca liczby. Wartości testowe zgodne ze źródłem są oznaczone S-nn, pozostałe są tylko danymi testu. Reguły krytyczne (RD-01, RD-03, RD-04, RD-06, RD-07, RD-09) przechodzą przegląd roli 06 i człowieka (C-003). Wektory eksportuje `node scripts/kontrola-brd.mjs docs/brd --wektory > tests/wektory/brd.json`.
 
 ## Status merytoryczny reguł (badania R-01…R-13, badacz, 26.10.2026)
 
@@ -17,6 +17,7 @@ Wymagania opierają się tylko na części **ustalonej**; części „konwencja�
 | RD-06 | po przerwie zacząć łatwiej i wracać stopniowo (S-34) | B i liczba kroków w dół: konwencja (OP-08) |
 | RD-07 | nowe objawy przy wysiłku → konsultacja (S-34); bez diagnozy (S-01) | odróżnienie bolesności po treningu od bólu ostrego: jedno źródło (OP-12); tekst do przeglądu tłumacza |
 | RD-08 | — (decyzja produktowa DP-32) | — |
+| RD-09 | młodzież bez wykwalifikowanego nadzoru nie powinna wykonywać treningu oporowego (S-36); seria do upadku nie zwiększa przyrostów (S-35) | wiek z samego roku urodzenia — uproszczenie; przebieg testu bez upadku — OP-09 |
 
 ## Reguły
 
@@ -126,15 +127,17 @@ Wymagania opierają się tylko na części **ustalonej**; części „konwencja�
 - Granica: brak
 - Podstawa: S-34 (nowe objawy → konsultacja), S-01 (przypomnienie o lekarzu), DK-06, DP-24
 - Krytyczna: tak
-- Uproszczenie: tekst z badań R-12 (własne słowa, do przeglądu tłumacza i recenzenta lokalizacji); co po odpowiedzi „Tak” na „Nadal boli?” — OP-30.
+- Uproszczenie: tekst z badań R-12 (własne słowa, do przeglądu tłumacza i recenzenta lokalizacji); po „Tak” na „Nadal boli?” ćwiczenie znowu pominięte z tekstem o specjaliście, pytanie przy każdym kolejnym treningu do odpowiedzi „Nie” (DK-12).
 
-| ID | Ból [-] | Wynik [powt.] | m [powt.] | Oczekiwane: pominięte [-] | Oczekiwane: tekst [-] | Oczekiwane: niepowodzenie [-] | Oczekiwane: pytanie [-] | Oczekiwane: wstrzymanie [-] | Tolerancja | Rodzaj | Pochodzenie |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| RD-07-W1 | 1 | 0 | 5 | 1 | 1 | 0 | 1 | 0 | 0 | typowy | S-34, DK-06: ból przed pierwszą serią |
-| RD-07-W2 | 0 | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | typowy | rachunek: bez bólu i bez niepowodzenia trening bez zmian |
-| RD-07-W3 | 1 | 2 | 5 | 1 | 1 | 0 | 1 | 0 | 0 | typowy | rachunek: wynik poniżej m przy zgłoszonym bólu nie jest niepowodzeniem (RD-02); DK-06 bez wstrzymania |
-| RD-07-W4 | 0 | 2 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | typowy | rachunek: bez bólu wynik poniżej m to niepowodzenie (RD-02) |
-| RD-07-W5 | brak | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | błąd | rachunek: brak zgłoszenia traktowany jak 0 |
+| ID | Ból [-] | Nadal boli [-] | Wynik [powt.] | m [powt.] | Oczekiwane: pominięte [-] | Oczekiwane: tekst [-] | Oczekiwane: niepowodzenie [-] | Oczekiwane: pytanie [-] | Oczekiwane: wstrzymanie [-] | Tolerancja | Rodzaj | Pochodzenie |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| RD-07-W1 | 1 | brak | 0 | 5 | 1 | 1 | 0 | 1 | 0 | 0 | typowy | S-34, DK-06: ból przed pierwszą serią |
+| RD-07-W2 | 0 | brak | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | typowy | rachunek: bez bólu i bez niepowodzenia trening bez zmian |
+| RD-07-W3 | 1 | brak | 2 | 5 | 1 | 1 | 0 | 1 | 0 | 0 | typowy | rachunek: wynik poniżej m przy zgłoszonym bólu nie jest niepowodzeniem (RD-02); DK-06 bez wstrzymania |
+| RD-07-W4 | 0 | brak | 2 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | typowy | rachunek: bez bólu wynik poniżej m to niepowodzenie (RD-02) |
+| RD-07-W5 | 0 | 1 | 0 | 5 | 1 | 1 | 0 | 1 | 0 | 0 | typowy | DK-12: „Tak” na „Nadal boli?” — znowu pominięte, tekst, pytanie przy następnym treningu |
+| RD-07-W6 | 0 | 0 | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | typowy | DK-12: „Nie” kończy pytania, ćwiczenie wraca |
+| RD-07-W7 | brak | brak | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | błąd | rachunek: brak zgłoszenia traktowany jak 0 |
 
 ### RD-08: Dzień treningowy w darmowym limicie
 - Wzór: ukończony trening na żywo zużywa dzień, gdy `czas bez pauz > 7 min` (DP-32); kilka takich treningów jednego dnia zużywa jeden dzień; trening wstecz, import, anulowany i trwający nie zużywają dnia; limit 5 dni w miesiącu kalendarzowym (DP-02)
@@ -151,3 +154,19 @@ Wymagania opierają się tylko na części **ustalonej**; części „konwencja�
 | RD-08-W4 | 7,02 | 1 | 1 | 0 | powyżej | DP-32 |
 | RD-08-W5 | 30 | 0 | 0 | 0 | typowy | DP-32: trening wstecz nie zużywa dnia |
 | RD-08-W6 | -5 | 1 | 0 | 0 | błąd | rachunek: czas < 0 to błędne dane |
+
+### RD-09: Wiek z roku urodzenia i tryb poniżej 18 lat
+- Wzór: `wiek = bieżący rok − rok urodzenia`; gdy `wiek < 18`: test kontrolny bez serii do upadku i tekst o treningu pod okiem trenera (DK-09)
+- Jednostki: rok bieżący, rok urodzenia [rok]; wiek [lata]; tryb poniżej 18 [-] (1 = tak)
+- Granica: `wiek = 18` to dorosły (ostro `< 18`)
+- Podstawa: decyzja DK-09; S-36 (nadzór u młodzieży), S-35 (upadek zbędny)
+- Krytyczna: tak
+- Uproszczenie: sam rok urodzenia zawyża wiek o mniej niż rok (osoba urodzona w grudniu ma w styczniu o rok mniej), więc część 17-latków w roku 18. urodzin trafia do trybu dorosłych; nazwane tu, do przeglądu roli 06.
+
+| ID | Rok bieżący [rok] | Rok urodzenia [rok] | Oczekiwane: tryb poniżej 18 [-] | Tolerancja | Rodzaj | Pochodzenie |
+|---|---|---|---|---|---|---|
+| RD-09-W1 | 2026 | 1990 | 0 | 0 | typowy | rachunek: 36 ≥ 18 |
+| RD-09-W2 | 2026 | 2008 | 0 | 0 | granica | rachunek: 2026 − 2008 = 18, granica ostra |
+| RD-09-W3 | 2026 | 2009 | 1 | 0 | poniżej | rachunek: 17 < 18 |
+| RD-09-W4 | 2026 | 2007 | 0 | 0 | powyżej | rachunek: 19 ≥ 18 |
+| RD-09-W5 | 2026 | 2027 | błąd danych | — | błąd | rachunek: rok z przyszłości odrzucony w ankiecie |
