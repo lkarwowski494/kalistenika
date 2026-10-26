@@ -1,0 +1,1114 @@
+{
+ "data": "2026-10-26",
+ "waluta": "PLN",
+ "tryb": "build",
+ "wariant": "miesieczna",
+ "opis_wariantu": "Tylko subskrypcja miesięczna 0,99 USD",
+ "kursy": {
+  "USD": {
+   "kurs": 3.9293,
+   "zrodlo": "NBP tabela 208/A/NBP/2026 z 2026-10-26, api.nbp.pl"
+  },
+  "EUR": {
+   "kurs": 4.4026,
+   "zrodlo": "NBP tabela 208/A/NBP/2026 z 2026-10-26, api.nbp.pl"
+  },
+  "GBP": {
+   "kurs": 5.2428,
+   "zrodlo": "NBP tabela 208/A/NBP/2026 z 2026-10-26, api.nbp.pl"
+  }
+ },
+ "prog": {
+  "kwota": 500,
+  "waluta": "USD",
+  "zrodlo": "próg właściciela 500 USD netto/rok globalnie (D-024; Trening docs/18, 21.10.2026)"
+ },
+ "platformy": {
+  "ios": {
+   "koszty_roczne": 0,
+   "koszty_zrodlo": "brak kosztów tylko tej aplikacji; Apple Developer i AI to koszty portfela (D-024); 0 zł poza Apple (CLAUDE.md Treningu)"
+  }
+ },
+ "sklepy": [
+  {
+   "platforma": "ios",
+   "kraj": "us",
+   "waluta": "USD",
+   "vat": {
+    "stawka": 0,
+    "zrodlo": "[ZAŁOŻENIE] ceny w sklepie USA bez podatku sprzedaży; podatek doliczany osobno, 0 w rachunku (2026-10-26)"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 12406,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 2981,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 993,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1655,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1029,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1745,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1995,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 469,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 207,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 219,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1458,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1156,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=us (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 173,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=us (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "gb",
+   "waluta": "GBP",
+   "vat": {
+    "stawka": 0.2,
+    "zrodlo": "gov.uk/vat-rates: „Standard rate 20%”, odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 1918,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 197,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 339,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 243,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 248,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 194,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 586,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 260,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 70,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 48,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 343,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 370,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=gb (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 45,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=gb (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "de",
+   "waluta": "EUR",
+   "vat": {
+    "stawka": 0.19,
+    "zrodlo": "europa.eu/youreurope VAT rates („Last checked: 13/07/2026”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 1499,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 112,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 732,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 260,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 13,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 70,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 67,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 126,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 206,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 88,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 629,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 168,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=de (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 22,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=de (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "fr",
+   "waluta": "EUR",
+   "vat": {
+    "stawka": 0.2,
+    "zrodlo": "europa.eu/youreurope VAT rates („Last checked: 13/07/2026”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 939,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 22,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 417,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 299,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 12,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 6,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 17,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 32,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 51,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 486,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 57,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=fr (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 17,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=fr (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "es",
+   "waluta": "EUR",
+   "vat": {
+    "stawka": 0.21,
+    "zrodlo": "europa.eu/youreurope VAT rates („Last checked: 13/07/2026”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 545,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 22,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 140,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 3460,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 5,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 8,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 3,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 33,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 8,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 20,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 254,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 41,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=es (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 19,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=es (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "it",
+   "waluta": "EUR",
+   "vat": {
+    "stawka": 0.22,
+    "zrodlo": "europa.eu/youreurope VAT rates („Last checked: 13/07/2026”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 897,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 18,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 196,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 730,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 11,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 33,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 17,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 41,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 24,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 20,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 261,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 41,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=it (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 6,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=it (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "nl",
+   "waluta": "EUR",
+   "vat": {
+    "stawka": 0.21,
+    "zrodlo": "europa.eu/youreurope VAT rates („Last checked: 13/07/2026”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 477,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 44,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 91,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 64,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 13,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 21,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 33,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 177,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 14,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 16,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 154,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 46,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=nl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 6,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=nl (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "pl",
+   "waluta": "PLN",
+   "vat": {
+    "stawka": 0.23,
+    "zrodlo": "ustawa o VAT, Dz.U. 2026 poz. 1263, art. 146ef ust. 1 pkt 1 („wynosi 23 %”), odczyt 2026-10-26"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 4.99,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 277,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 17,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 135,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 84,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 11,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 12,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 23,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 10,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 12,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 279,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 31,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=pl (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 12,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=pl (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  },
+  {
+   "platforma": "ios",
+   "kraj": "reszta",
+   "waluta": "USD",
+   "vat": {
+    "stawka": 0.1,
+    "zrodlo": "[ZAŁOŻENIE] VAT/GST uśredniony dla AU, BR, CA, CZ, IN, JP, KR, MX, UA; do sprawdzenia per kraj, gdy ten sklep zmienia werdykt (2026-10-26)"
+   },
+   "prowizja": {
+    "stawka": 0.15,
+    "zrodlo": "developer.apple.com/app-store/small-business-program: „reduced commission rate of 15%”, odczyt 2026-10-26; zgłoszenie właściciela 14.10.2026 (docs/18 Treningu) — to samo konto"
+   },
+   "produkt": {
+    "id": "miesieczna",
+    "cena_brutto": 0.74,
+    "platnosci_w_roku": 5,
+    "platnosci_zrodlo": "[ZAŁOŻENIE] opłacone miesiące na płacącego w roku przy planie miesięcznym (retencja) (2026-10-26)"
+   },
+   "konkurenci": [
+    {
+     "oceny": 5969,
+     "wydanie": "2017-01-16",
+     "zrodlo": "K-01: itunes.apple.com/lookup?id=1192413645&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 738,
+     "wydanie": "2023-11-23",
+     "zrodlo": "K-02: itunes.apple.com/lookup?id=6444292787&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 872,
+     "wydanie": "2020-05-13",
+     "zrodlo": "K-03: itunes.apple.com/lookup?id=1509531048&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 3804,
+     "wydanie": "2017-08-11",
+     "zrodlo": "K-04: itunes.apple.com/lookup?id=1265489771&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 202,
+     "wydanie": "2025-05-29",
+     "zrodlo": "K-05: itunes.apple.com/lookup?id=6745645930&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 326,
+     "wydanie": "2025-12-14",
+     "zrodlo": "K-06: itunes.apple.com/lookup?id=6755748144&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 406,
+     "wydanie": "2025-06-20",
+     "zrodlo": "K-07: itunes.apple.com/lookup?id=6747117100&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 235,
+     "wydanie": "2020-12-02",
+     "zrodlo": "K-08: itunes.apple.com/lookup?id=1542791853&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 105,
+     "wydanie": "2023-01-22",
+     "zrodlo": "K-09: itunes.apple.com/lookup?id=1634986201&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 148,
+     "wydanie": "2021-04-25",
+     "zrodlo": "K-10: itunes.apple.com/lookup?id=1558561315&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 1290,
+     "wydanie": "2015-03-20",
+     "zrodlo": "K-11: itunes.apple.com/lookup?id=969057083&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 571,
+     "wydanie": "2019-07-26",
+     "zrodlo": "K-12: itunes.apple.com/lookup?id=1472004214&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    },
+    {
+     "oceny": 93,
+     "wydanie": "2019-10-01",
+     "zrodlo": "K-13: itunes.apple.com/lookup?id=1474941254&country=au,br,ca,cz,in,jp,kr,mx,ua (userRatingCount), odczyt 2026-10-26"
+    }
+   ],
+   "zalozenia": {
+    "pobrania_na_ocene": {
+     "s": [
+      20,
+      60,
+      200
+     ],
+     "zrodlo": "[ZAŁOŻENIE] pobrania na jedną ocenę w sklepie; brak przeczytanego benchmarku, rozrzut 10× (2026-10-26)"
+    },
+    "udzial_nowej": {
+     "s": [
+      0.003,
+      0.01,
+      0.03
+     ],
+     "zrodlo": "[ZAŁOŻENIE] udział nowej aplikacji w pobraniach kategorii kalisteniki (13 konkurentów K-01…K-13), rozrzut 10× (2026-10-26)"
+    },
+    "konwersja": {
+     "s": [
+      0.009,
+      0.018,
+      0.036
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mnożnik konwersji wobec M5 S1 (wyższa cena albo mniej planów → mniej płacących) × 0.9 (2026-10-26)"
+    },
+    "darmowa_alternatywa": {
+     "s": [
+      0.5,
+      0.7,
+      0.9
+     ],
+     "zrodlo": "[ZAŁOŻENIE] mocne darmowe alternatywy: K-02 i K-12 z darmowymi progresjami (recenzje US 2026-10-26), darmowe filmy (2026-10-26)"
+    }
+   }
+  }
+ ]
+}

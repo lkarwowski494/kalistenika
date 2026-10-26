@@ -1,0 +1,13 @@
+| Wariant | Razem pes. / norm. / opt. | Werdykt |
+|---|---|---|
+| ceny-rynku | 162,38 / 4827,16 / 130434,77 PLN | budować |
+| jednorazowy-19.99 | 124,94 / 3498,40 / 89958,84 PLN | budować |
+| m5s1-trening | 91,08 / 2765,16 / 75683,10 PLN | budować |
+| jednorazowy-9.99 | 93,66 / 2622,47 / 67434,84 PLN | budować |
+| mies-rok | 70,90 / 2020,06 / 52842,66 PLN | budować |
+| roczna | 69,16 / 1936,41 / 49793,50 PLN | odłożyć |
+| jednorazowy-4.99 | 62,38 / 1746,53 / 44910,83 PLN | odłożyć |
+| miesieczna | 54,17 / 1516,66 / 38999,93 PLN | odłożyć |
+| platna-4.99 | 12,48 / 436,63 / 11227,71 PLN | odłożyć |
+| napiwek | 7,47 / 261,62 / 6727,50 PLN | odłożyć |
+Najwyższy wynik normalny: ceny-rynku (optymalny tylko, jeśli przechodzi podłogę).

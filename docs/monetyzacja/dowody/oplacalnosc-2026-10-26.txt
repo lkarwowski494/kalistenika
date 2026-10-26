@@ -1,0 +1,15 @@
+Wynik: node docs/monetyzacja/oplacalnosc.mjs docs/monetyzacja/oplacalnosc-wlasna.json · 2026-10-26 17:41 UTC · kod wyjścia 0
+Bramka opłacalności 2026-10-26 (PLN netto/rok, pes. / norm. / opt.; bez kosztów portfela i czasu, D-024)
+ios/us: płacący 2,12 / 59,30 / 1524,77; netto 52,16 / 1580,00 / 43185,15
+ios/gb: płacący 0,39 / 10,96 / 281,87; netto 10,72 / 324,76 / 8876,51
+ios/de: płacący 0,19 / 5,33 / 137,13; netto 4,96 / 152,24 / 4195,78
+ios/fr: płacący 0,09 / 2,44 / 62,78; netto 2,25 / 69,12 / 1904,98
+ios/es: płacący 0,15 / 4,34 / 111,48; netto 3,96 / 121,72 / 3354,76
+ios/it: płacący 0,09 / 2,58 / 66,30; netto 2,34 / 71,80 / 1978,80
+ios/nl: płacący 0,06 / 1,65 / 42,48; netto 1,51 / 46,38 / 1278,41
+ios/pl: płacący 0,04 / 1,04 / 26,69; netto 0,72 / 21,14 / 575,97
+ios/reszta: płacący 0,74 / 20,82 / 535,50; netto 12,47 / 377,99 / 10332,72
+ios: po kosztach 91,08 / 2765,16 / 75683,10
+A (dowody storefrontów): razem 91,08 / 2765,16 / 75683,10; werdykt wobec progu 1964,65 [próg właściciela 500 USD netto/rok globalnie (D-024; Trening docs/18, 21.10.2026)]: budować; wynik normalny wobec progu zmienia: pobrania_na_ocene (wszystkie sklepy); udzial_nowej (wszystkie sklepy); ios/us pobrania_na_ocene; ios/us udzial_nowej; konwersja (wszystkie sklepy)
+Największy wpływ (A, pes. → opt.): pobrania_na_ocene (wszystkie sklepy) 921,72 → 9217,18; udzial_nowej (wszystkie sklepy) 829,55 → 8295,47; ios/us pobrania_na_ocene 1711,82 → 6451,83
+Przybliżenie z jawnych założeń, nie prognoza; bez podatku dochodowego i składek.
