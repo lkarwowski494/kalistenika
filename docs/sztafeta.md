@@ -17,3 +17,11 @@
 - **Zostało:** tabela WTP dla 36 BR; E2 (opcje i `docs/monetyzacja/rachunek.json` + wynik `rachunek.mjs`, próg 500 USD w liczbie płacących, wariant prowizji 30%); E3 kontrakt płatności w `docs/monetyzacja.md` (produkty, bramki przy PR-01…PR-13, przywracanie, offline, ujawnienia dla 04, szkic ADR dla 05); w BRD: RD-10 (strażnik startu) i RD-11 (poziom dostępu przy błędzie sklepu) z wektorami, nowe BR-ZAK (przywracanie i nowy telefon, ekran zakupu z ujawnieniami, okno „Uczciwe zasady”, rodzina, kody i zwrot), ER-08, OP dla DK-13, DK-14 i bundle ID, status H-05, ZAL-003, ZAL-008; eksport `tests/wektory/brd.json`; przekazanie do roli 03.
 - **Pytania otwarte (`docs/decyzje.md`):** DK-13 ekran zakupu w trybie poniżej 18 lat (rekomendacja B, wersja neutralna); DK-14 przerwa wymuszona limitem a RD-06 (rekomendacja B, pytanie „Trenowałeś bez aplikacji?”). Plus [DO USTALENIA] nazwa aplikacji i bundle ID.
 - **Wznowienie:** 02-monetyzacja, tryb build, sesja 2, od E1.3 (tabela WTP) na gałęzi `monetyzacja`.
+
+## Wstrzymanie 26.10.2026 (właściciel)
+Prace nad kalisteniką wstrzymane do poniedziałku 2.11.2026. Stan:
+- rola 01 (odkrywanie): E4 zakończona w części niezależnej od źródeł (gałąź `odkrywanie`);
+- rola 02 sesja 2: przerwana, plan wznowienia wyżej; pytania DK-13 i DK-14 czekają na właściciela;
+- badacz: runda 2 przerwana — `docs/research/badania-R01-R13.md` (sekcja „Runda 2 — stan na przerwanie”, 9 nieprzeszukanych źródeł) i `docs/research/dane-kandydat-drabiny.json`; propozycja zakupu książek do decyzji właściciela (DK-11);
+- adresy stron praktyków (szczebel 5): Dysk, „Trening App / 05 Research konkurencji”.
+Wznowienie: najpierw badacz (dokończenie rundy 2), równolegle rola 02 od tabeli wartości.

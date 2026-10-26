@@ -1,0 +1,79 @@
+{
+  "_opis": "Kandydat danych drabin (badacz, 26.10.2026, runda 1 + runda 2 — przerwana). Status: ustalone | jedno-zrodlo | uproszczenie | konwencja | otwarte. Kroki 'otwarte' NIE trafiają do aplikacji. Źródła tylko wewnętrznie (ID z badania badania-R01-R13.md).",
+  "statusy": ["ustalone", "jedno-zrodlo", "uproszczenie", "konwencja", "otwarte"],
+  "drabiny": [
+    {
+      "id": "pompka",
+      "cel": "pompka na jednej ręce",
+      "sprzet": [],
+      "kroki": [
+        { "nr": 1, "nazwa": "pompka przy ścianie", "metryka": "powtorzenia", "status": "uproszczenie", "zrodla": ["EBB11", "GM11"], "uwaga": "kolejność ręce wyżej vs kolana zależy od wysokości podparcia" },
+        { "nr": 2, "nazwa": "pompka z rękami na podwyższeniu", "metryka": "powtorzenia", "status": "ustalone", "zrodla": ["EBB11", "GM11", "NASM"] },
+        { "nr": 3, "nazwa": "pompka na kolanach", "metryka": "powtorzenia", "status": "ustalone", "zrodla": ["EBB11", "GOU05", "NASM"] },
+        { "nr": 4, "nazwa": "pompka klasyczna", "metryka": "powtorzenia", "status": "ustalone", "zrodla": ["EBB11", "GOU05", "WU25", "NASM"] },
+        { "nr": 5, "nazwa": "pompka ze stopami na podwyższeniu", "metryka": "powtorzenia", "status": "ustalone", "zrodla": ["EBB11", "GM11"] },
+        { "nr": 6, "nazwa": "pompka łucznik", "metryka": "powtorzenia", "status": "otwarte", "zrodla": [], "runda2": "brak badań w Europe PMC" },
+        { "nr": 7, "nazwa": "pompka na jednej ręce z podwyższenia", "metryka": "powtorzenia", "status": "otwarte", "zrodla": [] },
+        { "nr": 8, "nazwa": "pompka na jednej ręce", "metryka": "powtorzenia", "status": "otwarte", "zrodla": [] }
+      ]
+    },
+    {
+      "id": "podciaganie",
+      "cel": "muscle-up",
+      "sprzet": ["drazek"],
+      "kroki": [
+        { "nr": 1, "nazwa": "zwis na drążku", "metryka": "czas", "status": "jedno-zrodlo", "zrodla": ["ACI"], "prog_przejscia": { "wartosc": "30 s + 8 ściągnięć łopatek", "status": "jedno-zrodlo", "zrodla": ["ACI"] } },
+        { "nr": 2, "nazwa": "wiosłowanie australijskie (stromo → płasko)", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["ACI", "YOU16"], "uwaga": "YOU16 tylko aktywacja mięśni, nie kolejność" },
+        { "nr": 3, "nazwa": "podciąganie z gumą LUB negatywne (warianty jednego kroku)", "metryka": "powtorzenia", "status": "uproszczenie", "zrodla": ["ACI", "MAI26"], "uwaga": "kolejność guma vs negatywy otwarta (runda 2: brak badań); propozycja: warianty tego samego kroku wg sprzętu", "tempo_opuszczania_s": { "wartosc": [3, 5], "status": "jedno-zrodlo", "zrodla": ["ACI"] }, "prog_przejscia": { "wartosc": "8 powtórzeń z najlżejszą gumą albo 5 negatywów po 5 s", "status": "jedno-zrodlo", "zrodla": ["ACI"] } },
+        { "nr": 4, "nazwa": "podciąganie (pierwsze powtórzenie)", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["ACI"] },
+        { "nr": 5, "nazwa": "podciąganie 3 × 5", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["ACI"] },
+        { "nr": 6, "nazwa": "wysokie podciąganie (klatka do drążka)", "metryka": "powtorzenia", "status": "otwarte", "zrodla": [] },
+        { "nr": 7, "nazwa": "muscle-up na drążku", "metryka": "powtorzenia", "status": "otwarte", "zrodla": ["WAL23"], "uwaga": "WAL23: brak standardowej progresji; drążek przed kółkami; warunki wstępne otwarte" }
+      ]
+    },
+    {
+      "id": "przysiad",
+      "cel": "pistol",
+      "sprzet": [],
+      "kroki": [
+        { "nr": 1, "nazwa": "przysiad", "metryka": "powtorzenia", "status": "uproszczenie", "zrodla": ["HEL22", "WEI23"], "uwaga": "ok. 50% na nogę — rachunek z symetrii" },
+        { "nr": 2, "nazwa": "wykrok", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["WEI23"], "uwaga": "poziom E w WEI23" },
+        { "nr": 3, "nazwa": "przysiad bułgarski (tylna stopa wyżej)", "metryka": "powtorzenia", "status": "uproszczenie", "zrodla": ["HEL22", "WEI23"], "uwaga": "noga wiodąca ok. 84% siły pionowej; poziom F w WEI23" },
+        { "nr": 4, "nazwa": "przysiad łyżwiarski", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["WEI23"], "uwaga": "poziom G w WEI23" },
+        { "nr": 5, "nazwa": "pistol ze skrzyni / ławki (ok. wysokości kolana), niepełny zakres", "metryka": "powtorzenia", "status": "jedno-zrodlo", "zrodla": ["SUS"], "uwaga": "szczebel źródła (uczelniane centrum sportu) otwarty; kolejność vs przysiad łyżwiarski otwarta" },
+        { "nr": 6, "nazwa": "pistol", "metryka": "powtorzenia", "status": "otwarte", "zrodla": ["SUS"], "uwaga": "100% na jedną nogę (rachunek); drugie źródło kolejności brak" }
+      ]
+    },
+    {
+      "id": "deska-lsit",
+      "cel": "L-sit",
+      "sprzet": ["poręcze lub uchwyty (do potwierdzenia)"],
+      "kroki": [
+        { "nr": 1, "nazwa": "deska", "metryka": "czas", "status": "otwarte", "zrodla": ["TUR26"], "uwaga": "jako krok do L-situ — brak źródła; TUR26 tylko test deski (śr. 105 ± 49 s u aktywnych dorosłych)" },
+        { "nr": 2, "nazwa": "podpór na prostych rękach", "metryka": "czas", "status": "otwarte", "zrodla": [] },
+        { "nr": 3, "nazwa": "L-sit skulony", "metryka": "czas", "status": "otwarte", "zrodla": [] },
+        { "nr": 4, "nazwa": "L-sit z jedną nogą prostą", "metryka": "czas", "status": "otwarte", "zrodla": [] },
+        { "nr": 5, "nazwa": "L-sit", "metryka": "czas", "status": "otwarte", "zrodla": ["FIGA"], "uwaga": "FIGA: zaliczenie elementu przy 2 s — konwencja zawodów" }
+      ]
+    }
+  ],
+  "progi_wspolne": {
+    "czestotliwosc_dni_tydz": { "wartosc": [2, 3], "status": "ustalone", "zrodla": ["A26", "A09", "WHO20"] },
+    "przerwa_miedzy_sesjami_h": { "wartosc": [48, 72], "status": "ustalone-kierunkowo", "zrodla": ["NY09", "WEI23"], "uwaga": "NY09 młodzież (S2), WEI23 dorośli ≥ 48 h (S3)" },
+    "serie_na_cwiczenie": { "wartosc": [2, 3], "status": "ustalone", "zrodla": ["A26", "NY09"] },
+    "przerwa_miedzy_seriami_s": { "wartosc": [60, 180], "domyslna": 120, "status": "ustalone", "status_domyslnej": "konwencja", "zrodla": ["NY09", "A09", "G18", "WEI23"] },
+    "zapas_powtorzen_rir": { "wartosc": [2, 3], "status": "uproszczenie", "zrodla": ["A26"], "uwaga": "kierunek (bez upadku) ustalony; dokładny RIR — za mało danych wg A26" },
+    "zakres_powtorzen_kroku": { "wartosc": [5, 12], "status": "uproszczenie", "zrodla": ["A09", "A26"] },
+    "kryterium_przejscia": { "regula": "technika poprawna + górna granica zakresu we wszystkich seriach", "status": "uproszczenie", "zrodla": ["A09", "NY09", "NASM", "WEI23"], "uwaga": "analogia do reguły +2–10% ciężaru; WEI23 — próg powtórzeń we wszystkich seriach" },
+    "sesje_potwierdzajace_prog": { "wartosc": 2, "status": "jedno-zrodlo", "zrodla": ["WEI23"], "uwaga": "runda 2: zmiana z konwencji 1 na 2 (S3); reguła 2 za 2 NSCA nieprzeczytana" },
+    "regresja": { "regula": "nie wykonano minimum powtórzeń (WEI23: 8 obunóż / 4 na nogę) → poziom niżej", "status": "jedno-zrodlo", "zrodla": ["WEI23"], "uwaga": "liczby dotyczą przysiadu; dla innych drabin — uproszczenie" },
+    "struktura_sesji": { "regula": "serie robocze na bieżącym kroku + serie na niższych krokach", "status": "jedno-zrodlo", "zrodla": ["WEI23"] },
+    "czas_utrzymania_s": { "wartosc": null, "status": "otwarte", "zrodla": ["KAH25", "TUR26", "FIGA"], "uwaga": "KAH25 30→60 s (+10 s/2 tyg.), TUR26 test deski śr. 105 s, FIGA L-sit 2 s (zawody) — brak zakresu treningowego" },
+    "odstep_testu_tyg": { "wartosc": 4, "status": "konwencja", "zrodla": [] },
+    "powrot_po_przerwie": { "regula": "dłuższa przerwa → łatwiejszy start", "status": "ustalone", "zrodla": ["BOS13", "GR22", "WHO20"], "progi_tygodni": { "wartosc": null, "status": "konwencja" } },
+    "rozgrzewka_min": { "wartosc": [5, 10], "typ": "dynamiczna, bez długiego rozciągania statycznego", "status": "ustalone", "zrodla": ["NY09", "FRA10", "KLO26"] },
+    "test_maks": { "regula": "po rozgrzewce, na początku sesji, przerwanie przy objawach; liczone tylko poprawne powtórzenia", "status": "ustalone", "status_kryterium_konca_przy_bledzie_techniki": "otwarte", "zrodla": ["FRA10", "FAI12", "YAN19", "WHO20", "TUR26"] },
+    "healthkit_typ": { "wartosc": "functionalStrengthTraining", "status": "ustalone", "zrodla": ["HK"] },
+    "wiek": { "regula": "młodzież tylko pod wykwalifikowanym nadzorem; bez testów maks. bez nadzoru", "status": "ustalone", "zrodla": ["NY09", "AAP", "FAI12"], "decyzja_produktowa": "wymagana" }
+  }
+}
