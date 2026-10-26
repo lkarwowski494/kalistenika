@@ -35,7 +35,53 @@ Odnośniki „Trening docs/18” dotyczą `docs/18-przekazanie.md` na gałęzi `
 | DP-15 | Kody ofertowe Apple (offer codes) dla testerów | docs/18 12.10.2026 (P8 A), docs/monetyzacja.md |
 | DP-16 | Cudze treści (nazwy konkurentów, cytaty) na Dysku; w repo kody K-nn | CLAUDE.md Treningu („Treści cudze”, 09.10.2026) |
 
-## Decyzje bez analogii — czekają na właściciela
+## Decyzje właściciela z bramki kroku 0 (26.10.2026, przekazane przez koordynatora)
+| ID | Decyzja (słowa z przekazania) | Odrzucone | Zależy od |
+|---|---|---|---|
+| DK-01 | „A osobne produkty, ta sama konstrukcja i ceny co Trening (bez wspólnej subskrypcji)” | B wspólna subskrypcja (serwer, konto, zmiana „Data Not Collected”); C powiązanie lokalne App Group (nie działa na drugim urządzeniu, łamie DP-12) | DP-02, DP-12 |
+| DK-02 | „B wzajemny odnośnik »Inne aplikacje studia« w »Więcej«, bez rabatu (zmiana w Treningu osobnym wydaniem)” | A brak wzmianki; C odnośnik + kody ofertowe (brak danych o subskrybentach) | wydanie Treningu z odnośnikiem |
+| DK-03 | „A specyfikacja i BRD teraz, kod dopiero po odświeżeniu bramki danymi Treningu z App Store Connect (~8 tygodni po premierze Treningu)” | B pełna budowa teraz; C wstrzymanie wszystkiego | OP-01 bramki (`docs/monetyzacja.md`), ZAL-007, ZAL-009 |
+Werdykt kroku 0: **budować, warunkowo** (warunek: odświeżenie bramki przed kodem). Decyzje są warunkowe wobec ZAL-007 i ZAL-009.
+
+## Decyzje merytoryczne (rola 01, 26.10.2026)
+| ID | Decyzja | Podstawa | Odrzucone |
+|---|---|---|---|
+| DM-01 | Hierarchia źródeł dla treningu i zdrowia przejęta z Treningu (CLAUDE.md, „Hierarchia źródeł dla treningu i zdrowia”, szczeble 1–5) wraz z zasadą liczby źródeł (zmiana 18.10.2026) | reguła decyzji właściciela 26.10.2026; ta sama dziedzina | domyślna hierarchia biblioteki ról (`zrodla.md`: przepisy → publikacje → instytucje), bo nie rozróżnia stanowisk organizacji naukowych od pojedynczych badań |
+| DM-02 | Wyjątek dla wskazówek techniki: 2 zgodne niezależne źródła szczebla 4 (ustawienie, przebieg, częste błędy, przedziały kątów, proste wskazówki oddechu) | CLAUDE.md Treningu, 25.10.2026 | — |
+| DM-03 | Reguły zmiany kroku (awans, cofnięcie, start, powrót po przerwie) są parametryczne: logika w BRD (RD-01…RD-06), liczby z badań R-01…R-13; do czasu przeglądu badacza liczby są `[DO USTALENIA]` | CLAUDE.md Treningu („Nie zgaduj liczb nieznanego pochodzenia”); `docs/brd/reguly.md` | wpisanie liczb z praktyki trenerów (szczebel 5) jako ustalonych |
+
+## Decyzje przejęte z Treningu (rola 01, 26.10.2026)
+| ID | Decyzja | Odnośnik w Treningu |
+|---|---|---|
+| DP-17 | Plan dobiera się sam, bez ręcznej edycji; zmiany planu (awans, cofnięcie kroku, powrót po przerwie) to propozycja do zatwierdzenia, z „Cofnij” | właściciel 25.10.2026 (docs/18); deload „tylko jako propozycja do zatwierdzenia” (CLAUDE.md, 08.10.2026) |
+| DP-18 | Podgląd planu przed zapisem (wynik do przejrzenia) | generator Treningu: „wynik do przejrzenia przed zapisem” (CLAUDE.md, 08.10.2026) |
+| DP-19 | Dane tylko w telefonie, bez konta, bez wywołań sieciowych; pełne działanie offline | Trening BRD ZP-05 i NFR „brak wywołań sieciowych”; DP-08 |
+| DP-20 | Kopia zapasowa JSON, eksport i import z kopią bezpieczeństwa przed importem; aktualizacja zachowuje dane (test na zapisach wydanych wersji) | Trening BRD, wymagania o danych (kopia, eksport, migracja) |
+| DP-21 | Apple Zdrowie opcjonalnie: zapis ukończonych treningów; trening z samych ćwiczeń z masą ciała jako `functionalStrengthTraining` | Trening `lib/health.ts` (rodzaj treningu), docs/28 |
+| DP-22 | Zegarek Apple: zakres jak w Treningu (wyświetla bieżące ćwiczenie, przerwę, odhacza; bez edycji); wersja, w której wchodzi, należy do roli 03 | Trening docs/18 13.10.2026 (ZEGARKI) |
+| DP-23 | Zapowiedzi głosowe domyślnie wyłączone | Trening D-005 (20.10.2026) |
+| DP-24 | Brak porad medycznych; zdanie o konsultacji z lekarzem lub fizjoterapeutą przy bólu, urazie, chorobie (jak `MedicalNote`) | CLAUDE.md Treningu; Trening BRD, zastrzeżenie medyczne |
+| DP-25 | Aplikacja nie jest skierowana do dzieci; ocena wieku 9+ (jedyne „tak”: Health or Wellness Topics); Health & Fitness bez kategorii dodatkowej; wyrób medyczny „No” | Trening docs/18 21.10.2026 (Q7 A) i 26.10.2026 (Z-19, Z-20, Z-22) |
+| DP-26 | Dostępność: wszystkie kraje poza Chinami kontynentalnymi (brak ICP) | Trening docs/18 26.10.2026 (Z-21) |
+| DP-27 | Wzorce interakcji (sposób wywołania, potwierdzenie, „Anuluj” po lewej w nagłówku okna, VoiceOver) jak Trening docs/32 | CLAUDE.md Treningu, 13.10.2026 |
+| DP-28 | Teksty naturalne, bez pouczania; słownik terminów obowiązuje tłumacza | CLAUDE.md Treningu, 25.10.2026 |
+| DP-29 | Źródła publicznie anonimowo (aplikacja, strona, opis sklepu) | CLAUDE.md Treningu, 25.10.2026 |
+| DP-30 | Przypomnienia: zgoda na powiadomienia zbierana przy pierwszym zaplanowanym dniu, nie na starcie | Trening BRD, generator planu (zgoda przy pierwszym zaplanowanym dniu) |
+| DP-31 | Porzucony trening na żywo: pytanie po 2 h, ciche zakończenie po 6 h | Trening D-008 (19.10.2026) |
+| DP-32 | Dzień treningowy w limicie: ukończony trening na żywo dłuższy niż 7 minut bez pauz; wstecz, import, anulowany i trwający nie zużywają dnia | Trening `lib/access.ts` (`MIN_LIVE_MINUTES_FOR_DAY = 7`, zmiana 23.10.2026); uszczegółowienie DP-02 |
+| DP-33 | Każdy realny przepływ ma scenariusz Maestro albo wyjątek z powodem; każda funkcja ma pełen zakres testów (definicja ukończenia) | CLAUDE.md Treningu, 06.10 i 14.10.2026 |
+| DP-34 | Polityka prywatności na stronie studia (wzór: apps4brew.com/<aplikacja>/privacy.html), standardowa licencja Apple (Standard EULA) | Trening docs/18 14.10 i 26.10.2026 (Z-18) |
+| DP-35 | Miejsca i sprzęt: ćwiczenia dobierane do tego, czym użytkownik dysponuje | Trening BRD, miejsca i sprzęt |
+| DP-36 | Program z kilku źródeł, nie kopia układu jednej książki | Trening docs/18 25.10.2026 (uwagi koordynatora do specyfikacji) |
+
+## Decyzje bez analogii w Treningu — czekają na właściciela (STOP roli 01, 26.10.2026)
+Opcje, kompromisy i rekomendacje: `docs/brd/README.md`, sekcja „Decyzje dla właściciela”.
+- **DK-04** ocena poziomu na starcie (OP-20).
+- **DK-05** przełożenie testu kontrolnego (OP-21).
+- **DK-06** drabina po zgłoszeniu bólu (OP-22).
+- **DK-07** co po osiągnięciu umiejętności docelowej (OP-23).
+
+## Historia: decyzje bez analogii z kroku 0 (rozstrzygnięte 26.10.2026, wyżej)
 - **DK-01 wspólna czy osobna subskrypcja z Treningiem** — opcje w `docs/monetyzacja.md` i raporcie roli 02 z 26.10.2026; rekomendacja A (osobne produkty, ta sama konstrukcja i ceny).
 - **DK-02 powiązanie z Treningiem w aplikacji** — rekomendacja B (wzajemny odnośnik w „Więcej”, bez rabatu).
 - **DK-03 co oznacza werdykt „budować, warunkowo” dla kolejności prac** — rekomendacja A (specyfikacja i BRD teraz; odświeżenie bramki danymi Treningu przed pisaniem kodu).

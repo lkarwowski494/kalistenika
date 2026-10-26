@@ -1,0 +1,762 @@
+[
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W1",
+    "wejscie": {
+      "Wynik [powt.]": 10,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 1,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: 10 ≥ 9, sesje 1 + 1 = 2 ≥ 2; n = 1 i k = 2 jak S-12",
+    "miejsce": "docs/brd/reguly.md:18"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W2",
+    "wejscie": {
+      "Wynik [powt.]": 9,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 1,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: 9 = 8 + 1 zalicza sesję; 2 = k",
+    "miejsce": "docs/brd/reguly.md:19"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W3",
+    "wejscie": {
+      "Wynik [powt.]": 8,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 1,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: 8 < 9, sesja niezaliczona, licznik 0",
+    "miejsce": "docs/brd/reguly.md:20"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W4",
+    "wejscie": {
+      "Wynik [powt.]": 9,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 0,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: pierwsza zaliczona sesja, 1 < 2",
+    "miejsce": "docs/brd/reguly.md:21"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W5",
+    "wejscie": {
+      "Wynik [powt.]": 12,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 3,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "powyżej",
+    "pochodzenie": "rachunek: 12 ≥ 9, 4 ≥ 2",
+    "miejsce": "docs/brd/reguly.md:22"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W6",
+    "wejscie": {
+      "Wynik [powt.]": 30,
+      "Cel [powt.]": 20,
+      "n [powt.]": 5,
+      "Zaliczone sesje przed [-]": 1,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: krok na czas, wynik i cel w sekundach (wartości testowe), 30 ≥ 25",
+    "miejsce": "docs/brd/reguly.md:23"
+  },
+  {
+    "regula": "RD-01",
+    "id": "RD-01-W7",
+    "wejscie": {
+      "Wynik [powt.]": -1,
+      "Cel [powt.]": 8,
+      "n [powt.]": 1,
+      "Zaliczone sesje przed [-]": 1,
+      "k [-]": 2
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: wynik < 0 to błędne dane; sesja się nie liczy, propozycji brak",
+    "miejsce": "docs/brd/reguly.md:24"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W1",
+    "wejscie": {
+      "Wynik [powt.]": 3,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 1,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "łatwiejszy"
+    },
+    "tolerancja": null,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: 3 < 5, 1 + 1 = 2 ≥ 2 (wartości testowe)",
+    "miejsce": "docs/brd/reguly.md:36"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W2",
+    "wejscie": {
+      "Wynik [powt.]": 5,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 1,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "brak"
+    },
+    "tolerancja": null,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: 5 = m nie jest niepowodzeniem",
+    "miejsce": "docs/brd/reguly.md:37"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W3",
+    "wejscie": {
+      "Wynik [powt.]": 4,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 0,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "brak"
+    },
+    "tolerancja": null,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: pierwsza nieudana sesja, 1 < 2",
+    "miejsce": "docs/brd/reguly.md:38"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W4",
+    "wejscie": {
+      "Wynik [powt.]": 6,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 1,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "brak"
+    },
+    "tolerancja": null,
+    "rodzaj": "powyżej",
+    "pochodzenie": "rachunek: 6 ≥ 5, sesja udana",
+    "miejsce": "docs/brd/reguly.md:39"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W5",
+    "wejscie": {
+      "Wynik [powt.]": 6,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 0,
+      "f [-]": 2,
+      "Za trudne [-]": 1,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "łatwiejszy"
+    },
+    "tolerancja": null,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: „Za trudne” daje propozycję niezależnie od wyniku",
+    "miejsce": "docs/brd/reguly.md:40"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W6",
+    "wejscie": {
+      "Wynik [powt.]": 2,
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 1,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 1
+    },
+    "oczekiwane": {
+      "działanie [-]": "wstrzymana"
+    },
+    "tolerancja": null,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: najniższy krok nie ma łatwiejszego",
+    "miejsce": "docs/brd/reguly.md:41"
+  },
+  {
+    "regula": "RD-02",
+    "id": "RD-02-W7",
+    "wejscie": {
+      "Wynik [powt.]": "brak",
+      "m [powt.]": 5,
+      "Nieudane sesje przed [-]": 1,
+      "f [-]": 2,
+      "Za trudne [-]": 0,
+      "Najniższy [-]": 0
+    },
+    "oczekiwane": {
+      "działanie [-]": "brak"
+    },
+    "tolerancja": null,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: brak wyniku (seria pominięta) nie jest niepowodzeniem",
+    "miejsce": "docs/brd/reguly.md:42"
+  },
+  {
+    "regula": "RD-03",
+    "id": "RD-03-W1",
+    "wejscie": {
+      "Objawy [-]": 0,
+      "Znana choroba [-]": 0
+    },
+    "oczekiwane": {
+      "przypomnienie [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "S-17: bez objawów i choroby przesiew nie wskazuje konsultacji",
+    "miejsce": "docs/brd/reguly.md:54"
+  },
+  {
+    "regula": "RD-03",
+    "id": "RD-03-W2",
+    "wejscie": {
+      "Objawy [-]": 1,
+      "Znana choroba [-]": 0
+    },
+    "oczekiwane": {
+      "przypomnienie [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "S-17, S-01",
+    "miejsce": "docs/brd/reguly.md:55"
+  },
+  {
+    "regula": "RD-03",
+    "id": "RD-03-W3",
+    "wejscie": {
+      "Objawy [-]": 0,
+      "Znana choroba [-]": 1
+    },
+    "oczekiwane": {
+      "przypomnienie [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "S-17, S-01",
+    "miejsce": "docs/brd/reguly.md:56"
+  },
+  {
+    "regula": "RD-03",
+    "id": "RD-03-W4",
+    "wejscie": {
+      "Objawy [-]": 1,
+      "Znana choroba [-]": 1
+    },
+    "oczekiwane": {
+      "przypomnienie [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "S-17, S-01",
+    "miejsce": "docs/brd/reguly.md:57"
+  },
+  {
+    "regula": "RD-03",
+    "id": "RD-03-W5",
+    "wejscie": {
+      "Objawy [-]": "brak",
+      "Znana choroba [-]": 0
+    },
+    "oczekiwane": {
+      "przypomnienie [-]": "brak wyniku"
+    },
+    "tolerancja": null,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: brak odpowiedzi zatrzymuje ankietę",
+    "miejsce": "docs/brd/reguly.md:58"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W1",
+    "wejscie": {
+      "Wynik testu [powt.]": 6,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": 2
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: 3 ≤ 6 < 8 (progi testowe)",
+    "miejsce": "docs/brd/reguly.md:70"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W2",
+    "wejscie": {
+      "Wynik testu [powt.]": 3,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": 2
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: wynik = próg kroku 2",
+    "miejsce": "docs/brd/reguly.md:71"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W3",
+    "wejscie": {
+      "Wynik testu [powt.]": 2,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: poniżej progu kroku 2",
+    "miejsce": "docs/brd/reguly.md:72"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W4",
+    "wejscie": {
+      "Wynik testu [powt.]": 20,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": 3
+    },
+    "tolerancja": 0,
+    "rodzaj": "powyżej",
+    "pochodzenie": "rachunek: najwyższy krok drabiny testowej",
+    "miejsce": "docs/brd/reguly.md:73"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W5",
+    "wejscie": {
+      "Wynik testu [powt.]": 0,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: zero powtórzeń to krok 1",
+    "miejsce": "docs/brd/reguly.md:74"
+  },
+  {
+    "regula": "RD-04",
+    "id": "RD-04-W6",
+    "wejscie": {
+      "Wynik testu [powt.]": -1,
+      "Próg kroku 2 [powt.]": 3,
+      "Próg kroku 3 [powt.]": 8
+    },
+    "oczekiwane": {
+      "krok startowy [-]": "błąd danych"
+    },
+    "tolerancja": null,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: wynik < 0 to błędne dane; test do powtórzenia",
+    "miejsce": "docs/brd/reguly.md:75"
+  },
+  {
+    "regula": "RD-05",
+    "id": "RD-05-W1",
+    "wejscie": {
+      "Dni od testu [d]": 35,
+      "T [d]": 28
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: 35 ≥ 28 (T testowe)",
+    "miejsce": "docs/brd/reguly.md:86"
+  },
+  {
+    "regula": "RD-05",
+    "id": "RD-05-W2",
+    "wejscie": {
+      "Dni od testu [d]": 28,
+      "T [d]": 28
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: dni = T",
+    "miejsce": "docs/brd/reguly.md:87"
+  },
+  {
+    "regula": "RD-05",
+    "id": "RD-05-W3",
+    "wejscie": {
+      "Dni od testu [d]": 27,
+      "T [d]": 28
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: 27 < 28",
+    "miejsce": "docs/brd/reguly.md:88"
+  },
+  {
+    "regula": "RD-05",
+    "id": "RD-05-W4",
+    "wejscie": {
+      "Dni od testu [d]": 29,
+      "T [d]": 28
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "powyżej",
+    "pochodzenie": "rachunek: 29 ≥ 28",
+    "miejsce": "docs/brd/reguly.md:89"
+  },
+  {
+    "regula": "RD-05",
+    "id": "RD-05-W5",
+    "wejscie": {
+      "Dni od testu [d]": -1,
+      "T [d]": 28
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: data testu z przyszłości (zmiana zegara) nie daje propozycji",
+    "miejsce": "docs/brd/reguly.md:90"
+  },
+  {
+    "regula": "RD-06",
+    "id": "RD-06-W1",
+    "wejscie": {
+      "Dni bez treningu [d]": 30,
+      "B [d]": 14
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: 30 ≥ 14 (B testowe)",
+    "miejsce": "docs/brd/reguly.md:102"
+  },
+  {
+    "regula": "RD-06",
+    "id": "RD-06-W2",
+    "wejscie": {
+      "Dni bez treningu [d]": 14,
+      "B [d]": 14
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "rachunek: dni = B",
+    "miejsce": "docs/brd/reguly.md:103"
+  },
+  {
+    "regula": "RD-06",
+    "id": "RD-06-W3",
+    "wejscie": {
+      "Dni bez treningu [d]": 13,
+      "B [d]": 14
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "rachunek: 13 < 14",
+    "miejsce": "docs/brd/reguly.md:104"
+  },
+  {
+    "regula": "RD-06",
+    "id": "RD-06-W4",
+    "wejscie": {
+      "Dni bez treningu [d]": 15,
+      "B [d]": 14
+    },
+    "oczekiwane": {
+      "propozycja [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "powyżej",
+    "pochodzenie": "rachunek: 15 ≥ 14",
+    "miejsce": "docs/brd/reguly.md:105"
+  },
+  {
+    "regula": "RD-06",
+    "id": "RD-06-W5",
+    "wejscie": {
+      "Dni bez treningu [d]": -2,
+      "B [d]": 14
+    },
+    "oczekiwane": {
+      "propozycja [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: data z przyszłości nie daje propozycji",
+    "miejsce": "docs/brd/reguly.md:106"
+  },
+  {
+    "regula": "RD-07",
+    "id": "RD-07-W1",
+    "wejscie": {
+      "Ból [-]": 1,
+      "Wynik [powt.]": 0,
+      "m [powt.]": 5
+    },
+    "oczekiwane": {
+      "pominięte [-]": 1,
+      "zdanie o specjaliście [-]": 1,
+      "niepowodzenie [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "S-01, DP-24: ból przed pierwszą serią",
+    "miejsce": "docs/brd/reguly.md:118"
+  },
+  {
+    "regula": "RD-07",
+    "id": "RD-07-W2",
+    "wejscie": {
+      "Ból [-]": 0,
+      "Wynik [powt.]": 6,
+      "m [powt.]": 5
+    },
+    "oczekiwane": {
+      "pominięte [-]": 0,
+      "zdanie o specjaliście [-]": 0,
+      "niepowodzenie [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: bez bólu i bez niepowodzenia trening bez zmian",
+    "miejsce": "docs/brd/reguly.md:119"
+  },
+  {
+    "regula": "RD-07",
+    "id": "RD-07-W3",
+    "wejscie": {
+      "Ból [-]": 1,
+      "Wynik [powt.]": 2,
+      "m [powt.]": 5
+    },
+    "oczekiwane": {
+      "pominięte [-]": 1,
+      "zdanie o specjaliście [-]": 1,
+      "niepowodzenie [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: wynik poniżej m przy zgłoszonym bólu nie jest niepowodzeniem (RD-02)",
+    "miejsce": "docs/brd/reguly.md:120"
+  },
+  {
+    "regula": "RD-07",
+    "id": "RD-07-W4",
+    "wejscie": {
+      "Ból [-]": 0,
+      "Wynik [powt.]": 2,
+      "m [powt.]": 5
+    },
+    "oczekiwane": {
+      "pominięte [-]": 0,
+      "zdanie o specjaliście [-]": 0,
+      "niepowodzenie [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "rachunek: bez bólu wynik poniżej m to niepowodzenie (RD-02)",
+    "miejsce": "docs/brd/reguly.md:121"
+  },
+  {
+    "regula": "RD-07",
+    "id": "RD-07-W5",
+    "wejscie": {
+      "Ból [-]": "brak",
+      "Wynik [powt.]": 6,
+      "m [powt.]": 5
+    },
+    "oczekiwane": {
+      "pominięte [-]": 0,
+      "zdanie o specjaliście [-]": 0,
+      "niepowodzenie [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: brak zgłoszenia traktowany jak 0",
+    "miejsce": "docs/brd/reguly.md:122"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W1",
+    "wejscie": {
+      "Czas [min]": 30,
+      "Na żywo [-]": 1
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "DP-32",
+    "miejsce": "docs/brd/reguly.md:133"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W2",
+    "wejscie": {
+      "Czas [min]": 7,
+      "Na żywo [-]": 1
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "granica",
+    "pochodzenie": "DP-32: granica ostra",
+    "miejsce": "docs/brd/reguly.md:134"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W3",
+    "wejscie": {
+      "Czas [min]": 6.99,
+      "Na żywo [-]": 1
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "poniżej",
+    "pochodzenie": "DP-32",
+    "miejsce": "docs/brd/reguly.md:135"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W4",
+    "wejscie": {
+      "Czas [min]": 7.02,
+      "Na żywo [-]": 1
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 1
+    },
+    "tolerancja": 0,
+    "rodzaj": "powyżej",
+    "pochodzenie": "DP-32",
+    "miejsce": "docs/brd/reguly.md:136"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W5",
+    "wejscie": {
+      "Czas [min]": 30,
+      "Na żywo [-]": 0
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "typowy",
+    "pochodzenie": "DP-32: trening wstecz nie zużywa dnia",
+    "miejsce": "docs/brd/reguly.md:137"
+  },
+  {
+    "regula": "RD-08",
+    "id": "RD-08-W6",
+    "wejscie": {
+      "Czas [min]": -5,
+      "Na żywo [-]": 1
+    },
+    "oczekiwane": {
+      "dzień zużyty [-]": 0
+    },
+    "tolerancja": 0,
+    "rodzaj": "błąd",
+    "pochodzenie": "rachunek: czas < 0 to błędne dane",
+    "miejsce": "docs/brd/reguly.md:138"
+  }
+]

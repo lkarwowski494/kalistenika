@@ -12,3 +12,9 @@
 | ZAL-008 | Limit 5 dni treningowych w miesiącu ma przy kalistenice ten sam sens co w Treningu (plany 2–4 sesje/tydz.) | 02 | hipoteza | sprawdza sesja 2 roli 02 z BRD i badaczem | DP-02 |
 | ZAL-009 | Pobrania na ocenę 20 / 60 / 200, konwersja 1% / 2% / 4% | 02 | hipoteza `[ZAŁOŻENIE]` | najtańsze sprawdzenie: dane Treningu z ASC po 8 tygodniach | werdykt, OP-01 |
 | ZAL-010 | Mocne darmowe alternatywy obniżają zakup (mnożnik 0,5 / 0,7 / 0,9) | 02 | hipoteza | K-02, K-12 z darmowymi progresjami (recenzje 2026-10-26) | werdykt |
+| ZAL-011 | Cztery drabiny (podciąganie → muscle-up, pompka → na jednej ręce, przysiad → pistolet, deska → L-sit) dadzą się oprzeć na źródłach w pierwszej wersji | 01 (z propozycji analityka) | hipoteza | brak; rozstrzyga badacz R-01 (BRD OP-01) | H-02, BR-PLN-001 |
+| ZAL-012 | Krótka ankieta + test w pierwszym treningu ustali krok startowy bezpieczniej niż sama ankieta | 01 | hipoteza | 7 z 13 konkurentów deklaruje test lub ocenę (opisy sklepu, 2026-10-26); recenzja K-02 chwali ankietę startową (S-20) | DK-04, H-03, BR-STA-003 |
+| ZAL-013 | Ćwiczenia na czas zyskują na zegarku tak jak trening siłowy w Treningu | 01 | hipoteza | recenzja K-01 o wracaniu do telefonu co 30 s (S-26, 2026-10-26) | H-04, BR-ZEG-001 |
+| ZAL-014 | Praca offline i bez konta wyróżnia aplikację | 01 | hipoteza | 0 z 13 opisów wspomina offline; skargi na brak offline i na konto (S-20, S-28; 2026-10-26) | H-06, NFR-KON-001 |
+| ZAL-015 | Figury v2 i krótkie wskazówki wystarczą do nauki techniki bez wideo | 01 | hipoteza | przeciw: 67 recenzji o technice i wideo (2026-10-26); sprawdzenie: recenzje po premierze | H-07, BR-TRN-005 |
+| ZAL-016 | Recenzje konkurencji (US) dobrze opisują prace użytkowników bez rozmów z nimi | 01 | hipoteza | 642 wpisy, 8 aplikacji (2026-10-26); sprawdzenie: rozmowy z 3–5 osobami (BRD OP-24) | J-01…J-10, P-1…P-3 |
