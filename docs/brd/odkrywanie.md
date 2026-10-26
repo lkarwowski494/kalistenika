@@ -175,6 +175,9 @@ Luki (praca, której nikt nie robi dobrze według recenzji): praca bez sieci i b
 ### OG-09: Rodzaj treningu w Zdrowiu
 - HealthKit ma rodzaj „functionalStrengthTraining” dla treningu siłowego głównie z wolnymi ciężarami i masą ciała [FAKT S-10]. Dotyczy BR-ZDR-001.
 
+### OG-10: Własny tekst ankiety bezpieczeństwa
+- Konsensusowy kwestionariusz przesiewowy ma licencję bez utworów zależnych i do użytku niekomercyjnego [FAKT S-37]; płatna aplikacja nie wbudowuje go, nie tłumaczy i nie przerabia — ankieta ma własny tekst. Dotyczy BR-STA-002, RD-03.
+
 ## Hipotezy dla ról 02 i 03
 
 ### H-01: Osobna aplikacja na wspólnym silniku przejdzie recenzję Apple
@@ -182,10 +185,11 @@ Luki (praca, której nikt nie robi dobrze według recenzji): praca bez sieci i b
 - Opcje: (a) osobna aplikacja z własnym rdzeniem drabin i notatką dla recenzenta — ryzyko odrzucenia do pierwszego zgłoszenia; (b) moduł w Treningu — odrzucony przez właściciela 25.10.2026 (brak własnego miejsca w wynikach). Rekomendacja: (a), już wybrana. Sprawdzenie: pierwsze zgłoszenie (RYZ-01). Rozstrzyga: właściciel (rozstrzygnięte), rola 11 (notatka).
 ### H-02: Liczba drabin w pierwszej wersji
 - Rodzaj: zakres · Rejestr: ZAL-011 · Dowody za szerokim wyborem: umiejętności z recenzji (S-23), cztery cele w propozycji analityka (podciąganie → muscle-up, pompka → na jednej ręce, przysiad → pistolet, deska → L-sit) · Przeciw: każda drabina wymaga źródeł R-01 i figur [OCENA].
-- Opcje: (a) 4 drabiny (pełny program ciała, więcej badań); (b) 2 drabiny (ciągnięcie i pchanie, szybciej); (c) 1 drabina pilotażowa (podciąganie → muscle-up). Rekomendacja: (a), jeśli badacz potwierdzi kroki wszystkich; inaczej tyle, ile ma źródła. Rozstrzyga: rola 03 z właścicielem.
+- Opcje: (a) 4 drabiny (pełny program ciała, więcej badań); (b) 2 drabiny (ciągnięcie i pchanie, szybciej); (c) 1 drabina pilotażowa (podciąganie → muscle-up). Rozstrzyga: rola 03 z właścicielem.
+- **Podważone 26.10.2026 (badania R-01):** żadna drabina nie jest potwierdzona do samego celu; ustalone albo uproszczone są tylko dolne odcinki (pompka do „stopy wyżej”, przysiad do bułgarskiego; podciąganie do 3 × 5 — jedno źródło szczebla 4), L-sit otwarty w całości. ZAL-011 ma status „podważone”; pytanie o cele pierwszej wersji i zakup książek poszło do właściciela (DK-08, DK-11; OP-26, OP-29).
 ### H-03: Ocena poziomu na starcie
 - Rodzaj: zakres i wartość · Rejestr: ZAL-012 · Dowody: test i ankieta deklarowane przez 7 z 13 konkurentów (tabela wyżej); „beginning questionnaire was great” (S-20) · Przeciw: test maksymalny bez przygotowania (OG-03).
-- Opcje i rekomendacja: decyzja właściciela DK-04 (`README.md`). Rozstrzyga: właściciel.
+- Rozstrzygnięte: DK-04 (ankieta na start, test w pierwszym treningu), 26.10.2026.
 ### H-04: Zegarek w pierwszej wersji
 - Rodzaj: zakres · Rejestr: ZAL-013 · Dowody za: ćwiczenia na czas bez patrzenia w telefon (S-26), Trening ma zegarek (DP-22) · Przeciw: osobny cel budowania i testy; analityk proponował „bez w v1”.
 - Opcje: (a) zegarek w 1.0 jak Trening; (b) w pierwszej aktualizacji po 1.0; (c) bez zegarka. Rekomendacja: (b), bo pakiet silnika z zegarkiem powstaje po Treningu 1.1 [OCENA]. Rozstrzyga: rola 03.

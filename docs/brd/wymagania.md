@@ -3,6 +3,8 @@ Stan: E3 · Aktualizacja: 2026-10-26
 
 Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; cięcie na pierwszą wersję należy do roli 03 (H-02, H-04). Liczby w kryteriach pochodzą z wektorów RD albo z decyzji; parametry merytoryczne są otwarte (OP-01…OP-13). Każdy przepływ dostanie scenariusz Maestro albo wyjątek z powodem (DP-33).
 
+**Podstawa merytoryczna (26.10.2026, po badaniach R-01…R-13):** wymagania opierają się tylko na częściach reguł o statusie „ustalone” (`reguly.md`, „Status merytoryczny reguł”). Liczby o statusie konwencja albo uproszczenie są parametrami w jednym pliku progów z tym oznaczeniem i nie są w interfejsie przedstawiane jako zalecenie; części otwarte nie wchodzą do aplikacji. **Treść drabin (kroki, cele) czeka na DK-08…DK-11** — wymagania zależne od nich mają „zależy od” i nie przechodzą do E4.
+
 ## Przepływy
 
 ### PR-01: Pierwsze uruchomienie
@@ -68,15 +70,20 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy użytkownik próbuje przejść dalej
     - Wtedy przycisk „Dalej” jest nieaktywny (RD-03-W5)
 
-### BR-STA-003: Ocena poziomu i krok startowy
-- Przepływ: PR-01 · Reguła: RD-04
-- Dowód potrzeby: J-01; S-15, S-20, S-29; H-03; DK-04
-- zależy od: ZAL-012
+### BR-STA-003: Ocena poziomu: ankieta na start, test w pierwszym treningu
+- Przepływ: PR-01, PR-02 · Reguła: RD-04
+- Dowód potrzeby: J-01; S-34, S-15, S-20, S-29; DK-04
+- zależy od: ZAL-012, DK-08 (kroki drabin)
+- Status merytoryczny: ustalone „zacząć łatwiej i zwiększać stopniowo” (S-34); progi przypisania i start krok niżej — konwencja (OP-06)
 - Kryteria akceptacji:
-  - Scenariusz: Wynik między progami
-    - Zakładając, że drabina ma progi wejścia kroków 2 i 3 równe 3 i 8 powtórzeń (wartości testowe)
-    - Gdy wynik testu wynosi 6 powtórzeń
-    - Wtedy podgląd planu pokazuje krok 2 (RD-04-W1)
+  - Scenariusz: Ankieta wskazuje krok deklarowany
+    - Zakładając, że użytkownik odpowiada w ankiecie, ile powtórzeń robi
+    - Gdy kończy ankietę
+    - Wtedy podgląd planu pokazuje krok deklarowany z informacją, że pierwszy trening go sprawdzi (DK-04)
+  - Scenariusz: Test w pierwszym treningu koryguje krok
+    - Zakładając, że drabina ma progi wejścia kroków 2 i 3 równe 3 i 8 powtórzeń (wartości testowe), a test odbywa się po rozgrzewce
+    - Gdy wynik testu w pierwszym treningu wynosi 6 powtórzeń
+    - Wtedy aplikacja proponuje krok 2 do zatwierdzenia (RD-04-W1)
   - Scenariusz: Zero powtórzeń
     - Zakładając, że użytkownik nie wykonał żadnego powtórzenia
     - Gdy zapisuje wynik
@@ -86,10 +93,20 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy użytkownik zapisuje test
     - Wtedy aplikacja prosi o poprawny wynik i nie ustala kroku (RD-04-W6)
 
+### BR-STA-004: Wiek użytkownika a trening bez nadzoru
+- Przepływ: PR-01
+- Dowód potrzeby: S-36 (młodzież bez wykwalifikowanego nadzoru nie powinna wykonywać treningu oporowego); DP-25
+- zależy od: DK-09
+- Kryteria akceptacji:
+  - Scenariusz: Zachowanie według decyzji
+    - Zakładając, że właściciel rozstrzygnął DK-09 (OP-27)
+    - Gdy osoba niepełnoletnia przechodzi start
+    - Wtedy aplikacja zachowuje się według DK-09 i nie proponuje testów maksymalnych bez nadzoru (S-36)
+
 ### BR-PLN-001: Drabina umiejętności z widoczną drogą
 - Przepływ: PR-08
 - Dowód potrzeby: J-03; S-23; motyw „progresja” 84 z 642 recenzji (`odkrywanie.md`); OG-01
-- zależy od: ZAL-011
+- zależy od: ZAL-011 (podważone), DK-08, DK-11
 - Kryteria akceptacji:
   - Scenariusz: Widok drabiny
     - Zakładając, że użytkownik ma aktywną drabinę na kroku 3
@@ -133,6 +150,7 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
 ### BR-PLN-004: Kroki dopasowane do sprzętu
 - Przepływ: PR-01, PR-09
 - Dowód potrzeby: J-07; S-24; DP-35; OP-15
+- zależy od: DK-10
 - Kryteria akceptacji:
   - Scenariusz: Bez drążka
     - Zakładając, że użytkownik zaznaczył brak drążka
@@ -205,16 +223,17 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
 
 ### BR-TRN-004: Rozgrzewka przed treningiem i testem
 - Przepływ: PR-02, PR-06
-- Dowód potrzeby: J-06; S-26 („no timer for the warmup”); OP-13
+- Dowód potrzeby: J-06; S-26 („no timer for the warmup”); S-36
+- Status merytoryczny: ustalone — 5–10 minut aktywności dynamicznych (S-36); serie rozgrzewkowe łatwiejszym wariantem — otwarte (OP-13)
 - Kryteria akceptacji:
   - Scenariusz: Rozgrzewka z odliczaniem
     - Zakładając, że trening dnia się zaczyna
     - Gdy użytkownik startuje
-    - Wtedy pierwsza jest rozgrzewka z odliczaniem czasu, a jej treść pochodzi z przeglądu badacza (OP-13)
+    - Wtedy pierwsza jest rozgrzewka z ćwiczeń dynamicznych z odliczaniem czasu w przedziale 5–10 minut (S-36)
   - Scenariusz: Pominięcie rozgrzewki
     - Zakładając, że użytkownik pomija rozgrzewkę przed testem
     - Gdy przechodzi do testu
-    - Wtedy widzi jedno zdanie o ryzyku testu bez rozgrzewki i może kontynuować
+    - Wtedy widzi jedno zdanie, że test najlepiej robić po rozgrzewce, i może kontynuować
 
 ### BR-TRN-005: Technika kroku: figura i krótkie wskazówki
 - Przepływ: PR-02, PR-08
@@ -298,7 +317,8 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
 
 ### BR-TST-001: Test kontrolny w terminie, bez presji
 - Przepływ: PR-06 · Reguły: RD-05, RD-04
-- Dowód potrzeby: J-05; S-23; OG-03; OP-09
+- Dowód potrzeby: J-05; S-23; OG-03; S-34, S-35, S-36
+- Status merytoryczny: ustalone — rozgrzewka przed wysiłkiem (S-36), przerwanie przy nowych objawach (S-34), seria do upadku nie zwiększa przyrostów, więc test do upadku tylko jako rzadki pomiar (S-35); odstęp T — konwencja (OP-07); bezpieczeństwo testu bez nadzoru — otwarte (OP-09)
 - Kryteria akceptacji:
   - Scenariusz: Termin testu
     - Zakładając, że T = 28 dni (wartość testowa, OP-07)
@@ -308,6 +328,14 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Zakładając, że od testu minęło 27 dni
     - Gdy użytkownik otwiera „Dziś”
     - Wtedy testu nie ma (RD-05-W3)
+  - Scenariusz: Kolejność w sesji
+    - Zakładając, że test jest dziś zaplanowany
+    - Gdy użytkownik startuje trening
+    - Wtedy test jest po rozgrzewce i przed resztą treningu
+  - Scenariusz: Objawy w czasie testu
+    - Zakładając, że trwa test
+    - Gdy użytkownik wybiera „Przerwij”
+    - Wtedy test kończy się bez wyniku i bez zmiany kroku, a aplikacja pokazuje zdanie, że przy nowych objawach (ból w klatce, zawroty, duszność) trzeba przerwać i skontaktować się z lekarzem (S-34)
   - Scenariusz: Wynik testu
     - Zakładając, że użytkownik kończy test
     - Gdy zapisuje wynik
@@ -317,14 +345,22 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy użytkownik czyta opis
     - Wtedy tekst nie zachęca do wyniku za wszelką cenę i mówi, że test można przerwać w każdej chwili (OG-03)
 
-### BR-TST-002: Przełożenie testu
+### BR-TST-002: Przełożenie testu raz o tydzień
 - Przepływ: PR-06
 - Dowód potrzeby: J-05; DK-05
 - Kryteria akceptacji:
-  - Scenariusz: Przełożenie
-    - Zakładając, że test jest zapowiedziany
+  - Scenariusz: Pierwsze przełożenie
+    - Zakładając, że test jest zapowiedziany i nie był przekładany
     - Gdy użytkownik wybiera „Nie dziś”
-    - Wtedy trening dnia odbywa się bez testu, a nowy termin wynika z decyzji DK-05 (OP-21)
+    - Wtedy trening dnia odbywa się bez testu, a test wraca 7 dni później (DK-05)
+  - Scenariusz: Po przełożeniu
+    - Zakładając, że test był już raz przełożony i minęło 7 dni
+    - Gdy użytkownik zaczyna najbliższy trening
+    - Wtedy test jest zapowiedziany z opcją „Pomiń”, bez opcji kolejnego przełożenia (DK-05)
+  - Scenariusz: Pominięcie
+    - Zakładając, że użytkownik pomija przełożony test
+    - Gdy kończy trening
+    - Wtedy następny test liczy się według RD-05 od dnia pominięcia, a krok się nie zmienia
 
 ### BR-POW-001: Bezpieczny powrót po przerwie
 - Przepływ: PR-07 · Reguła: RD-06
@@ -343,22 +379,23 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy użytkownik otwiera aplikację
     - Wtedy propozycji nie ma, a dane się nie zmieniają (RD-06-W5)
 
-### BR-BEZ-001: „Boli” przy ćwiczeniu
+### BR-BEZ-001: „Boli” przy ćwiczeniu: pominięcie dziś i „Nadal boli?” przy następnym treningu
 - Przepływ: PR-05 · Reguła: RD-07
-- Dowód potrzeby: J-06; OG-02; S-33; DP-24
+- Dowód potrzeby: J-06; OG-02; S-33, S-34; DP-24; DK-06
+- Status merytoryczny: ustalone — nowe objawy → konsultacja (S-34), bez diagnozy (S-01); tekst według R-12 do przeglądu tłumacza (OP-12)
 - Kryteria akceptacji:
   - Scenariusz: Zgłoszenie bólu
     - Zakładając, że trwa trening
     - Gdy użytkownik wybiera „Boli” przy ćwiczeniu
-    - Wtedy ćwiczenie jest dziś pominięte, pojawia się zdanie o konsultacji ze specjalistą, gdy ból nie mija, i nie ma diagnozy ani porady leczenia (RD-07-W1)
+    - Wtedy ćwiczenie jest dziś pominięte, pojawia się tekst bez diagnozy (konsultacja, gdy ból jest ostry, nie mija albo wraca; ból w klatce, zawroty lub duszność — przerwać trening i skontaktować się z lekarzem), a drabina nie jest wstrzymana (RD-07-W1)
   - Scenariusz: Ból a kryterium kroku
     - Zakładając, że wynik serii był poniżej progu, bo zabolało
     - Gdy użytkownik zgłasza ból
     - Wtedy ta sesja nie liczy się jako niepowodzenie (RD-07-W3)
-  - Scenariusz: Drabina po bólu
-    - Zakładając, że użytkownik zgłosił ból
-    - Gdy trening się kończy
-    - Wtedy stan drabiny wynika z decyzji DK-06 (OP-22)
+  - Scenariusz: Następny trening
+    - Zakładając, że użytkownik zgłosił ból przy ćwiczeniu w poprzednim treningu
+    - Gdy zaczyna następny trening z tym ćwiczeniem
+    - Wtedy przed tym ćwiczeniem widzi pytanie „Nadal boli?” (DK-06); co po odpowiedzi „Tak” — OP-30
 
 ### BR-BEZ-002: Zastrzeżenie medyczne widoczne w aplikacji
 - Przepływ: PR-01, PR-06, PR-13
@@ -382,14 +419,19 @@ Lista jest szeroka (zasada roli 7): obejmuje wszystko, na co wskazują dowody; c
     - Gdy otwiera „Postępy”
     - Wtedy widzi jedno zdanie, co pojawi się po pierwszym treningu, zamiast pustego wykresu
 
-### BR-PST-002: Umiejętność osiągnięta
+### BR-PST-002: Umiejętność osiągnięta: podtrzymanie i nowy cel
 - Przepływ: PR-03, PR-08
 - Dowód potrzeby: J-03; DK-07
+- zależy od: DK-08 (cele drabin)
 - Kryteria akceptacji:
   - Scenariusz: Ostatni krok zaliczony
     - Zakładając, że użytkownik zalicza kryterium ostatniego kroku drabiny
     - Gdy kończy sesję
-    - Wtedy widzi, że umiejętność jest osiągnięta, a dalszy plan wynika z decyzji DK-07 (OP-23)
+    - Wtedy widzi, że umiejętność jest osiągnięta, a aplikacja proponuje do zatwierdzenia plan podtrzymania (ostatni krok rzadziej) i wybór nowego celu (DK-07)
+  - Scenariusz: Częstotliwość podtrzymania
+    - Zakładając, że użytkownik zatwierdził podtrzymanie
+    - Gdy powstaje plan
+    - Wtedy ostatni krok pojawia się rzadziej niż w planie rozwoju, a liczba sesji pochodzi z pliku progów z oznaczeniem źródła albo konwencji (OP-04)
 
 ### BR-DAN-001: Dane tylko w telefonie, bez konta
 - Przepływ: PR-10

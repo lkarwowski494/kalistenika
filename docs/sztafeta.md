@@ -4,9 +4,9 @@
 | Rola | Tryb | Stan | Commit | Artefakty | Otwarte decyzje |
 |---|---|---|---|---|---|
 | 02 Monetyzacja (krok 0, moduł oplacalnosc) | build | zakończona 2026-10-26: werdykt „budować, warunkowo”; DK-01 = A, DK-02 = B, DK-03 = A | 3f226c5 | docs/monetyzacja.md, docs/monetyzacja/ | — |
-| 01 Odkrywanie | build | STOP E3 2026-10-26 (gałąź `odkrywanie`): BRD kontrola kod 0; bramki E0–E2 przeszły regułą analogii (E2 „kontynuować” = DK-03 A) | zob. `git log odkrywanie` | CLAUDE.md, docs/brd/, tests/wektory/brd.json, scripts/kontrola-brd.mjs, docs/decyzje.md (DM-01…03, DP-17…36), docs/zalozenia.md (ZAL-011…016) | DK-04, DK-05, DK-06, DK-07 |
+| 01 Odkrywanie | build | STOP przed E4 2026-10-26 (gałąź `odkrywanie`): DK-04…DK-07 zapisane, badania R-01…R-13 wpisane (statusy reguł), BRD kontrola kod 0 | zob. `git log odkrywanie` | CLAUDE.md, docs/brd/, tests/wektory/brd.json, scripts/kontrola-brd.mjs, docs/decyzje.md, docs/zalozenia.md | DK-08, DK-09, DK-10, DK-11 (u właściciela), OP-30 |
 
 ## Następny krok
-1. Właściciel: DK-04…DK-07 (`docs/brd/README.md`, „Decyzje dla właściciela”); po odpowiedzi rola 01 zapisuje je dosłownie, poprawia BR-STA-003, BR-TST-002, BR-BEZ-001, BR-PST-002 i przechodzi E4 (przekazanie).
-2. Równolegle (niezależne od DK): badacz merytoryczny R-01…R-13 i OP-14, OP-15 (BRD `README.md`, „Otwarte pytania”); wynik wraca do roli 01 jako ER i liczby w RD.
-3. Po E4: 02-monetyzacja sesja 2 (`node tools/assemble.mjs 02-monetyzacja --tryb build`) i 03 zakres. Kod aplikacji dopiero po odświeżeniu bramki danymi Treningu z App Store Connect (DK-03).
+1. Właściciel (przez koordynatora): DK-08 cele v1, DK-09 wiek, DK-10 ciągnięcie bez drążka, DK-11 zakup książek; do tego OP-30 („Nadal boli?” → „Tak”). Po odpowiedzi rola 01 zapisuje je dosłownie, uzupełnia BR-PLN-001, BR-PLN-004, BR-STA-003, BR-STA-004, BR-PST-002 i przechodzi E4.
+2. Plik badań (`badania-R01-R13.md`, `dane-kandydat-drabiny.json`, scratchpad koordynatora) do przeniesienia do `docs/research/` po przejrzeniu nazw (źródła szczebla 5 i nazwy sklepów na Dysk).
+3. Po E4: 02-monetyzacja sesja 2 i 03 zakres. Kod dopiero po odświeżeniu bramki danymi Treningu (DK-03).

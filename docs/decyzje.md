@@ -74,12 +74,19 @@ Werdykt kroku 0: **budować, warunkowo** (warunek: odświeżenie bramki przed ko
 | DP-35 | Miejsca i sprzęt: ćwiczenia dobierane do tego, czym użytkownik dysponuje | Trening BRD, miejsca i sprzęt |
 | DP-36 | Program z kilku źródeł, nie kopia układu jednej książki | Trening docs/18 25.10.2026 (uwagi koordynatora do specyfikacji) |
 
-## Decyzje bez analogii w Treningu — czekają na właściciela (STOP roli 01, 26.10.2026)
-Opcje, kompromisy i rekomendacje: `docs/brd/README.md`, sekcja „Decyzje dla właściciela”.
-- **DK-04** ocena poziomu na starcie (OP-20).
-- **DK-05** przełożenie testu kontrolnego (OP-21).
-- **DK-06** drabina po zgłoszeniu bólu (OP-22).
-- **DK-07** co po osiągnięciu umiejętności docelowej (OP-23).
+## Decyzje właściciela z bramki E3 roli 01 (26.10.2026, przekazane przez koordynatora)
+| ID | Decyzja (słowa z przekazania) | Rekomendacja / odrzucone | Zależy od |
+|---|---|---|---|
+| DK-04 | „ankieta na start, potem test w 1. treningu” | zgodnie z rekomendacją A; odrzucone B sama ankieta, C test przed planem | BRD RD-04, BR-STA-003; liczby przypisania kroku to konwencja (badacz R-06) |
+| DK-05 | „test kontrolny można odłożyć raz o tydzień, potem pojawia się przy najbliższym treningu (z możliwością pominięcia)” | zgodnie z rekomendacją A; odrzucone B bez limitu, C obowiązkowy | BRD RD-05, BR-TST-002 |
+| DK-06 | „Tylko pominięcie dziś” — plan działa dalej, przy kolejnym treningu pytanie „Nadal boli?”, tekst bez diagnozy (R-12); bez automatycznego wstrzymania drabiny | **wbrew rekomendacji** (rekomendacja: A, drabina wstrzymana do ręcznego wznowienia); odrzucone A i C (łatwiejszy krok) | BRD RD-07, BR-BEZ-001; tekst z badań R-12 |
+| DK-07 | „podtrzymanie (rzadsze treningi) i propozycja nowego celu” | zgodnie z rekomendacją A; odrzucone B zamknięcie drabiny, C trudniejsze warianty | BRD BR-PST-002; częstotliwość podtrzymania bez źródła (OP-04) |
+
+## Decyzje bez analogii — pytania u właściciela (z badań R-01…R-13, 26.10.2026; odpowiedź przez koordynatora)
+- **DK-08** cele pierwszej wersji: żadna drabina nie jest potwierdzona do samego celu, L-sit otwarty w całości (BRD OP-26, H-02).
+- **DK-09** wiek: aplikacja bez nadzoru a młodzież (BRD OP-27).
+- **DK-10** ciągnięcie bez drążka (BRD OP-28).
+- **DK-11** zakup legalnych kopii książek jako źródeł szczebla 3 (wyjątek od „0 zł”) (BRD OP-29).
 
 ## Historia: decyzje bez analogii z kroku 0 (rozstrzygnięte 26.10.2026, wyżej)
 - **DK-01 wspólna czy osobna subskrypcja z Treningiem** — opcje w `docs/monetyzacja.md` i raporcie roli 02 z 26.10.2026; rekomendacja A (osobne produkty, ta sama konstrukcja i ceny).
