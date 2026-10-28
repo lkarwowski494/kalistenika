@@ -109,3 +109,6 @@ Decyzja: **w techniqueatlas, nowa sekcja „Progresje”** (drabiny i kroki; str
 - **Decyzja (wszystkie aplikacje i strony studia):** projekt rozwijamy na prywatnym koncie GitHub właściciela, dopóki nie osiągnie wydania na produkcji (aplikacja w App Store albo publikacja strony); do organizacji Apps4Brew przenosimy dopiero po nim. Kalistenika: po pierwszym wydaniu w App Store. Trening: po wydaniu 1.0 (zgodne z D7 A, Trening docs/46). Strona techniqueatlas: po publikacji.
 - Zastępuje zapis „organizacja Apps4Brew, zakłada właściciel” w CLAUDE.md (repo od startu w organizacji). Odrzucone: repo od początku w organizacji (narzut uprawnień, sekretów i aplikacji Claude dla projektów, które mogą nie wyjść na produkcję).
 
+## DK-17 — rejestr zobowiązań na przyszłość (właściciel, 28.10.2026 ~22:00 UTC, przekazane przez koordynatora)
+- Akcje z warunkiem startu (data albo zdarzenie) w `docs/zobowiazania.md` w każdym repo studia; CLAUDE.md każe go czytać przed planem, hak startu sesji wypisuje „Aktywne”. Odrzucone: jeden wspólny plik w repo `prompts`; same zaplanowane zadania.
+

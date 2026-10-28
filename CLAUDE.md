@@ -23,6 +23,9 @@ Silnik Treningu jako wspólny pakiet wydzielony po Treningu 1.1 (katalog ćwicze
 - `docs/monetyzacja.md` i `docs/monetyzacja/` (02)
 - kontrakt zakresu `docs/scope-contract.md` (03), projekt `docs/design/` (04), ADR `docs/adr/` (05), rejestr twierdzeń (06)
 
+## Zobowiązania na przyszłość (właściciel 28.10.2026)
+- Akcje z warunkiem startu w przyszłości (data albo zdarzenie) żyją w `docs/zobowiazania.md`, nie w pamięci sesji. Przed planem przeczytaj sekcję „Aktywne” (hak `SessionStart` w `.claude/settings.json` wypisuje ją na starcie) i wykonuj akcje ze spełnionym warunkiem; nowe ustalenie z terminem dopisz od razu, zrobione przenieś do „Archiwum”.
+
 ## Zasady (przejęte z Treningu: reguły właściciela dla wszystkich jego aplikacji)
 - **Reguła decyzji (właściciel 26.10.2026):** decyzje takie same jak w Treningu; każdą przejętą zapisz w `docs/decyzje.md` z odnośnikiem. Tylko decyzja bez analogii idzie do właściciela: 3 opcje z kompromisami i rekomendacją. *Dlaczego:* aplikacje studia działają według jednego zestawu zasad.
 - Repo PUBLICZNE (ADR-031 Treningu) na prywatnym koncie właściciela (`lkarwowski494/kalistenika`) do pierwszego wydania na produkcji (App Store); przeniesienie do organizacji Apps4Brew dopiero po nim (DK-16, właściciel 28.10.2026). Żadnych sekretów (klucze, tokeny, certyfikaty, .p8/.p12, .env) ani danych osobowych (UDID, e-mail); przed commitem `git diff --cached`. Logi i artefakty CI też są publiczne.
