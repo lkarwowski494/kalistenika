@@ -104,3 +104,8 @@ Werdykt kroku 0: **budować, warunkowo** (warunek: odświeżenie bramki przed ko
 
 ## DK-15 — gdzie strona z ćwiczeniami kalisteniki (właściciel, 26.10.2026)
 Decyzja: **w techniqueatlas, nowa sekcja „Progresje”** (drabiny i kroki; strony kroków polecają tę aplikację). Odrzucone: osobna strona (dzieli ruch w tym samym temacie, podwójne utrzymanie). Skutek dla specyfikacji: dane drabin eksportowane na stronę tak jak katalog Treningu (do zapisania jako wymaganie przy wznowieniu).
+
+## DK-16 — kiedy repo trafia do organizacji Apps4Brew (właściciel, 28.10.2026 ~21:50 UTC, przekazane przez koordynatora)
+- **Decyzja (wszystkie aplikacje i strony studia):** projekt rozwijamy na prywatnym koncie GitHub właściciela, dopóki nie osiągnie wydania na produkcji (aplikacja w App Store albo publikacja strony); do organizacji Apps4Brew przenosimy dopiero po nim. Kalistenika: po pierwszym wydaniu w App Store. Trening: po wydaniu 1.0 (zgodne z D7 A, Trening docs/46). Strona techniqueatlas: po publikacji.
+- Zastępuje zapis „organizacja Apps4Brew, zakłada właściciel” w CLAUDE.md (repo od startu w organizacji). Odrzucone: repo od początku w organizacji (narzut uprawnień, sekretów i aplikacji Claude dla projektów, które mogą nie wyjść na produkcję).
+

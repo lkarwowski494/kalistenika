@@ -25,7 +25,7 @@ Silnik Treningu jako wspólny pakiet wydzielony po Treningu 1.1 (katalog ćwicze
 
 ## Zasady (przejęte z Treningu: reguły właściciela dla wszystkich jego aplikacji)
 - **Reguła decyzji (właściciel 26.10.2026):** decyzje takie same jak w Treningu; każdą przejętą zapisz w `docs/decyzje.md` z odnośnikiem. Tylko decyzja bez analogii idzie do właściciela: 3 opcje z kompromisami i rekomendacją. *Dlaczego:* aplikacje studia działają według jednego zestawu zasad.
-- Repo PUBLICZNE (organizacja Apps4Brew, zakłada właściciel; ADR-031 Treningu). Żadnych sekretów (klucze, tokeny, certyfikaty, .p8/.p12, .env) ani danych osobowych (UDID, e-mail); przed commitem `git diff --cached`. Logi i artefakty CI też są publiczne.
+- Repo PUBLICZNE (ADR-031 Treningu) na prywatnym koncie właściciela (`lkarwowski494/kalistenika`) do pierwszego wydania na produkcji (App Store); przeniesienie do organizacji Apps4Brew dopiero po nim (DK-16, właściciel 28.10.2026). Żadnych sekretów (klucze, tokeny, certyfikaty, .p8/.p12, .env) ani danych osobowych (UDID, e-mail); przed commitem `git diff --cached`. Logi i artefakty CI też są publiczne.
 - Narzędzia 0 zł poza opłatą Apple; macOS w GitHub Actions jest darmowy tylko przy repo publicznym. Bez serwera, konta i analityki.
 - Testy przed kodem. Każdy błąd z audytu dostaje test, który go odtwarza. Każda funkcja przy wdrażaniu ma pełen zakres testów automatycznych (definicja ukończenia jak Trening docs/20); każdy realny przepływ ma scenariusz Maestro albo wyjątek z powodem.
 - Zero utraty danych: migracja w transakcji, test na kopii bazy poprzedniej wersji; kopia kompletna (WAL: `VACUUM INTO` albo checkpoint), zapis rekordu nadrzędnego przez UPSERT, nie `INSERT OR REPLACE`.
