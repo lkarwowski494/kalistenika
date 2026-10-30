@@ -55,6 +55,7 @@ Silnik Treningu jako wspólny pakiet wydzielony po Treningu 1.1 (katalog ćwicze
 
 ## Treści cudze i nazwy innych firm (zasada właściciela 9.10.2026)
 - Research konkurencji, cytaty ze stron i opisy innych aplikacji na Dysku („Trening App / 05 Research konkurencji”); w repo tylko kody K-nn i własne wnioski. Cytat w repo najwyżej 1–2 zdania z adresem.
+- Nazwa ostateczna najpierw w App Store Connect (DK-18, 30.10.2026): publicznie (repo, strona, posty) tylko nazwa robocza, dopóki rekord aplikacji z nazwą ostateczną nie istnieje w ASC.
 - Nazwy innych aplikacji i marek nie w kodzie, komentarzach, tekstach aplikacji ani opisie App Store (wytyczne 2.3.7, 5.2.1).
 
 # Compact instructions

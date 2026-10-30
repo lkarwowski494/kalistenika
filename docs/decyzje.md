@@ -112,3 +112,7 @@ Decyzja: **w techniqueatlas, nowa sekcja „Progresje”** (drabiny i kroki; str
 ## DK-17 — rejestr zobowiązań na przyszłość (właściciel, 28.10.2026 ~22:00 UTC, przekazane przez koordynatora)
 - Akcje z warunkiem startu (data albo zdarzenie) w `docs/zobowiazania.md` w każdym repo studia; CLAUDE.md każe go czytać przed planem, hak startu sesji wypisuje „Aktywne”. Odrzucone: jeden wspólny plik w repo `prompts`; same zaplanowane zadania.
 
+
+## DK-18 — nazwa ostateczna najpierw w App Store Connect (właściciel, 30.10.2026 ~21:30 PL, przekazane przez koordynatora Treningu)
+- **Decyzja (wszystkie nowe aplikacje studia, wariant A):** nazwę ostateczną aplikacji najpierw rezerwujemy w App Store Connect (rekord aplikacji), dopiero potem pojawia się w repo, na stronie albo w postach; do tego czasu publicznie tylko nazwa robocza. Kalistenika: przy wyborze nazwy ostatecznej — rekord w ASC przed pierwszym publicznym użyciem. *Dlaczego:* przypadek z forum (nazwa i zrzuty skopiowane ze strony autora przed jego zgłoszeniem); spór o nazwę u Apple wymaga praw do znaku: „If another developer is using the app name and you have trademark rights to it, you can submit a claim” (developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app, odczyt 30.10.2026). Otwarte: jak długo Apple trzyma nazwę w rekordzie bez buildu.
+- Odrzucone: B — dodatkowo bez publicznych zrzutów i opisów niewydanych funkcji (ogranicza marketing przed startem); C — bez zasady. Zapis źródłowy: Trening CLAUDE.md i docs/18 (30.10.2026).
